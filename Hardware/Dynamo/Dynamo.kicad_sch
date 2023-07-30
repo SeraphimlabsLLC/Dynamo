@@ -2388,6 +2388,9 @@
   (junction (at 97.79 91.44) (diameter 0) (color 0 0 0 0)
     (uuid 97bf089a-af58-4aa3-887d-a69bf6c371dd)
   )
+  (junction (at 127 189.23) (diameter 0) (color 0 0 0 0)
+    (uuid 9958dfba-960b-45bf-9983-270474cb0e02)
+  )
   (junction (at 67.31 91.44) (diameter 0) (color 0 0 0 0)
     (uuid 9f7c623f-db35-493c-a0b8-8679373cb491)
   )
@@ -2399,6 +2402,9 @@
   )
   (junction (at 151.13 53.34) (diameter 0) (color 0 0 0 0)
     (uuid a8b96854-aa69-4cad-af1d-edc6139d9579)
+  )
+  (junction (at 91.44 20.32) (diameter 0) (color 0 0 0 0)
+    (uuid aef43832-f4e9-4789-9921-7fbb29b99c52)
   )
   (junction (at 76.2 91.44) (diameter 0) (color 0 0 0 0)
     (uuid c78978f6-5b5a-4b3a-a4b8-1fb635236ff4)
@@ -2481,6 +2487,10 @@
     (stroke (width 0) (type default))
     (uuid 12e8e654-3f74-4d57-9501-826682576c79)
   )
+  (wire (pts (xy 86.36 22.86) (xy 86.36 20.32))
+    (stroke (width 0) (type default))
+    (uuid 13382d4f-637d-49fb-8019-553f05594723)
+  )
   (wire (pts (xy 172.72 33.02) (xy 137.16 33.02))
     (stroke (width 0) (type default))
     (uuid 136e39c8-0b0a-4b1d-852a-4ac49e9fca4d)
@@ -2493,6 +2503,10 @@
     (stroke (width 0) (type default))
     (uuid 13e65bb7-ed95-4860-bfc9-c398ea1f4c66)
   )
+  (wire (pts (xy 124.46 189.23) (xy 127 189.23))
+    (stroke (width 0) (type default))
+    (uuid 14e02768-671c-4762-a187-4dfeb0d09090)
+  )
   (wire (pts (xy 170.18 81.28) (xy 172.72 81.28))
     (stroke (width 0) (type default))
     (uuid 150440f6-7d5b-4216-8fc6-5e5f89f15558)
@@ -2501,9 +2515,17 @@
     (stroke (width 0) (type default))
     (uuid 159f3d34-cce1-4b13-a40f-20acc0e03cb9)
   )
+  (wire (pts (xy 127 189.23) (xy 127 190.5))
+    (stroke (width 0) (type default))
+    (uuid 16a4da73-1d5b-458a-8158-7853734cc07f)
+  )
   (wire (pts (xy 97.79 93.98) (xy 97.79 91.44))
     (stroke (width 0) (type default))
     (uuid 1774aca4-becd-4e21-88f7-4d488e0beda8)
+  )
+  (wire (pts (xy 91.44 20.32) (xy 96.52 20.32))
+    (stroke (width 0) (type default))
+    (uuid 17dbdc36-4acc-412b-9b50-d644a9bfbf7e)
   )
   (wire (pts (xy 172.72 43.18) (xy 163.83 43.18))
     (stroke (width 0) (type default))
@@ -2548,6 +2570,10 @@
   (wire (pts (xy 48.26 170.18) (xy 54.61 170.18))
     (stroke (width 0) (type default))
     (uuid 26f43d11-79e3-46dc-af71-4f7a0f36f089)
+  )
+  (wire (pts (xy 124.46 187.96) (xy 124.46 189.23))
+    (stroke (width 0) (type default))
+    (uuid 26f6beee-ba88-43d7-90c4-fb9e87435fa9)
   )
   (wire (pts (xy 148.59 50.8) (xy 148.59 60.96))
     (stroke (width 0) (type default))
@@ -3077,6 +3103,10 @@
     (stroke (width 0) (type default))
     (uuid ab25ad09-856e-448f-ae42-49452dde993a)
   )
+  (wire (pts (xy 86.36 20.32) (xy 91.44 20.32))
+    (stroke (width 0) (type default))
+    (uuid ab555178-f618-4335-9ae0-29c72b63e00f)
+  )
   (wire (pts (xy 63.5 49.53) (xy 63.5 52.07))
     (stroke (width 0) (type default))
     (uuid ab5ee128-e8f7-4ae3-8666-7d893d9851fc)
@@ -3092,6 +3122,10 @@
   (wire (pts (xy 158.75 189.23) (xy 158.75 186.69))
     (stroke (width 0) (type default))
     (uuid acfb9e6f-ebd9-4daf-a2e1-942999b993a3)
+  )
+  (wire (pts (xy 86.36 30.48) (xy 86.36 27.94))
+    (stroke (width 0) (type default))
+    (uuid ad8d7bfe-6273-43dd-8621-4bf9bb619239)
   )
   (wire (pts (xy 180.34 116.84) (xy 180.34 119.38))
     (stroke (width 0) (type default))
@@ -3193,7 +3227,7 @@
     (stroke (width 0) (type default))
     (uuid cf434112-45b0-41ac-941d-721f9a492025)
   )
-  (wire (pts (xy 127 187.96) (xy 127 190.5))
+  (wire (pts (xy 127 187.96) (xy 127 189.23))
     (stroke (width 0) (type default))
     (uuid cf8070d2-1fd7-4a85-bdeb-a7a39f78d669)
   )
@@ -3249,6 +3283,10 @@
     (stroke (width 0) (type default))
     (uuid e00f4dea-6928-4cb0-b46a-5322e1dc4762)
   )
+  (wire (pts (xy 96.52 30.48) (xy 96.52 27.94))
+    (stroke (width 0) (type default))
+    (uuid e304e734-c394-43ba-a6d8-08de631bce0c)
+  )
   (wire (pts (xy 162.56 25.4) (xy 162.56 48.26))
     (stroke (width 0) (type default))
     (uuid e362e859-987d-4e03-b2ec-af7c32879cd3)
@@ -3276,6 +3314,10 @@
   (wire (pts (xy 48.26 60.96) (xy 53.34 60.96))
     (stroke (width 0) (type default))
     (uuid ee1629c3-5da5-4685-817d-8c3dd48b3dad)
+  )
+  (wire (pts (xy 96.52 22.86) (xy 96.52 20.32))
+    (stroke (width 0) (type default))
+    (uuid ef3f1a3e-3f15-4d17-be22-f10cb793efae)
   )
   (wire (pts (xy 271.78 19.05) (xy 266.7 19.05))
     (stroke (width 0) (type default))
@@ -3683,7 +3725,7 @@
     (pin "5" (uuid 73b2b5cc-02ed-4e6b-a254-60302013991d))
     (pin "6" (uuid 6460a603-eab2-4b5c-b228-223370878d1b))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U2") (unit 1)
         )
@@ -3719,7 +3761,7 @@
     (pin "5" (uuid 71e664f8-86a9-493e-8f50-94fe228622ea))
     (pin "6" (uuid a5896dca-b1d9-4741-8704-21d3484b71e8))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U3") (unit 1)
         )
@@ -3744,7 +3786,7 @@
     )
     (pin "1" (uuid c4f0a077-2d90-4d5d-a9b8-dfba0c4a967b))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR04") (unit 1)
         )
@@ -3769,7 +3811,7 @@
     )
     (pin "1" (uuid bf5517e8-0fa5-4ba6-ae1d-a0cc07b728a8))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR02") (unit 1)
         )
@@ -3794,7 +3836,7 @@
     )
     (pin "1" (uuid f60cb417-a3d7-46ad-a6a8-188b9dff9310))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR06") (unit 1)
         )
@@ -3817,16 +3859,16 @@
     (property "Datasheet" "~" (at 20.32 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MFG" "Bourns" (at 20.32 43.18 0)
+    (property "MFG" "YAEGO" (at 20.32 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "PN" "CR1206-FX-3001ELF" (at 20.32 43.18 0)
+    (property "PN" "RC1206FR-073KL" (at 20.32 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8c4b109c-d7dd-48a6-ae09-acebdfeaacb0))
     (pin "2" (uuid 754025e6-a345-497a-b5f0-edb83d350fbb))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "R1") (unit 1)
         )
@@ -3861,7 +3903,7 @@
     (pin "4" (uuid 0e007d33-0039-4edb-b272-99d2a3d28c9e))
     (pin "5" (uuid 1559a542-9850-4bd0-9c94-c53797f68b43))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U6") (unit 1)
         )
@@ -3886,7 +3928,7 @@
     )
     (pin "1" (uuid 338edd34-0c0e-4a4a-80d8-296d6b235682))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR022") (unit 1)
         )
@@ -3921,7 +3963,7 @@
     (pin "4" (uuid 69434764-7088-4674-978e-f80c901aee3c))
     (pin "5" (uuid 7b5fcdde-eac2-4078-aa9d-8e5377c6f130))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U7") (unit 1)
         )
@@ -3946,7 +3988,7 @@
     )
     (pin "1" (uuid 7eb695c1-ebf4-4645-ba9d-b56eef843a40))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR024") (unit 1)
         )
@@ -3981,7 +4023,7 @@
     (pin "4" (uuid 7403edc6-9560-45aa-84ce-6e5f573f9f9d))
     (pin "5" (uuid 54e92f8f-4748-45b2-8358-21cf6e7983a7))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U8") (unit 1)
         )
@@ -4006,7 +4048,7 @@
     )
     (pin "1" (uuid cd8b33f6-6af4-4a6d-bd31-b601b4641399))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR026") (unit 1)
         )
@@ -4041,7 +4083,7 @@
     (pin "4" (uuid 3417b375-accd-45ed-9221-3d3f4cfe1fd3))
     (pin "5" (uuid 5585d294-e5d8-4101-8f3c-ed849140120b))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U9") (unit 1)
         )
@@ -4066,7 +4108,7 @@
     )
     (pin "1" (uuid a813a893-6573-4d31-a5e2-d051efae8b0a))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR028") (unit 1)
         )
@@ -4098,7 +4140,7 @@
     (pin "1" (uuid 32a93b93-43e7-4ce0-b51b-a1c14b536d01))
     (pin "2" (uuid 2cc14f71-abe8-4793-abf9-871f60b4f457))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "Railsync1") (unit 1)
         )
@@ -4123,7 +4165,7 @@
     )
     (pin "1" (uuid cfbf2cd7-736e-4b20-8421-029a2f46363c))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR08") (unit 1)
         )
@@ -4179,7 +4221,7 @@
     (pin "8" (uuid c3aec462-96ee-4409-ba71-3190d291356b))
     (pin "9" (uuid f7c3c266-46d2-4d25-ac64-c9955afdad4b))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "UNO_SHIELD1") (unit 1)
         )
@@ -4204,7 +4246,7 @@
     )
     (pin "1" (uuid fca012a4-e5bf-4d8d-8281-8e807fd36e39))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR0106") (unit 1)
         )
@@ -4236,7 +4278,7 @@
     (pin "1" (uuid 0036f5f0-1348-4c3a-b32a-8a95ab453848))
     (pin "2" (uuid 4d983df3-bdbe-4b3b-b059-e69ecac83bdc))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "CU2") (unit 1)
         )
@@ -4261,7 +4303,7 @@
     )
     (pin "1" (uuid 75b7e1d8-b6aa-4d5a-8a92-c54d050ace73))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR010") (unit 1)
         )
@@ -4293,7 +4335,7 @@
     (pin "1" (uuid b3f6f738-8b9e-494f-b8cf-0db8f375a81e))
     (pin "2" (uuid 38f93696-5d22-473d-8720-6394f4ed8f17))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "CU3") (unit 1)
         )
@@ -4318,7 +4360,7 @@
     )
     (pin "1" (uuid dabb5cbe-fc7d-44e7-ac9f-7acb94c11e46))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR012") (unit 1)
         )
@@ -4350,7 +4392,7 @@
     (pin "1" (uuid b8974314-ecbf-4f98-80d5-879b2b6efc2c))
     (pin "2" (uuid ccb7476f-e735-4ac7-a6b1-9d0b9044d5b3))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "CU10") (unit 1)
         )
@@ -4375,7 +4417,7 @@
     )
     (pin "1" (uuid 32f053f9-ec03-44bc-b2b1-b4f1e4ec0022))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR016") (unit 1)
         )
@@ -4407,7 +4449,7 @@
     (pin "1" (uuid ca348e47-c84d-4c28-af5c-d12f4d636306))
     (pin "2" (uuid 2225ee2a-3b69-4c98-aba3-31f9c457f8e9))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "C1") (unit 1)
         )
@@ -4439,7 +4481,7 @@
     (pin "1" (uuid 52e37c70-9a9a-44df-8e50-b9536bb3fd96))
     (pin "2" (uuid 5db1403b-b7a3-4bd8-8897-e1c4b03ce31e))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "RESET1") (unit 1)
         )
@@ -4477,7 +4519,7 @@
     (pin "7" (uuid 6a75732f-65d2-4f1d-a4ab-95cee9965e1e))
     (pin "8" (uuid e6d03b0f-9798-4158-b023-ce25063a6162))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U13") (unit 1)
         )
@@ -4502,7 +4544,7 @@
     )
     (pin "1" (uuid eed4800f-30d1-47c1-b6d7-b474c31945f6))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR015") (unit 1)
         )
@@ -4540,7 +4582,7 @@
     (pin "7" (uuid 6f3384e1-8f1c-4ad4-8810-3600c383c768))
     (pin "8" (uuid a9f4c839-d56a-49d9-84bd-8826b30ab36d))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U14") (unit 1)
         )
@@ -4565,7 +4607,7 @@
     )
     (pin "1" (uuid de5ba354-6d5a-469c-90d0-3716cd96296d))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR017") (unit 1)
         )
@@ -4590,9 +4632,34 @@
     )
     (pin "1" (uuid 029978f0-4eb7-4945-b8a3-54bfb2317a4e))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR033") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 91.44 20.32 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1daedefc-6526-497f-93e3-7c9145afe892)
+    (property "Reference" "#PWR032" (at 91.44 24.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 91.44 15.24 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 91.44 20.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 91.44 20.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7a8fd6b1-c7dd-4970-86a1-9dc8ff72dc4e))
+    (instances
+      (project "Dynamo"
+        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -4622,7 +4689,7 @@
     (pin "1" (uuid dad18ffd-1335-4f6c-9c6a-14f15d03e296))
     (pin "2" (uuid fb3c2ef6-a438-4d86-ae3a-e5b581b43668))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "BOOT1") (unit 1)
         )
@@ -4654,12 +4721,44 @@
     (pin "1" (uuid 82153d77-2e65-4f25-8836-8440817b6277))
     (pin "2" (uuid f57dd4e7-d119-454e-b7ee-8c98c9a6a3b7))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "C6") (unit 1)
         )
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
           (reference "C11") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Small") (at 86.36 25.4 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 2ca72cff-4092-4b2e-982a-b86115cae076)
+    (property "Reference" "CU14" (at 88.6968 24.2316 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "0.1uF" (at 88.6968 26.543 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 86.36 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 86.36 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFG" "KEMET" (at 86.36 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "PN" "C1206C104K5RAC7210" (at 86.36 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid bfd522bf-8ed0-47c5-9b37-e56a2fffc244))
+    (pin "2" (uuid 306dff2e-a4f2-4d71-8207-86e4801fb638))
+    (instances
+      (project "Dynamo"
+        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
+          (reference "CU14") (unit 1)
         )
       )
     )
@@ -4689,7 +4788,7 @@
     (pin "1" (uuid 44ad3ef9-8f1f-4d87-9aef-d757923379a9))
     (pin "2" (uuid 863b7b4a-7418-46a6-a041-6706ede817a6))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "C5") (unit 1)
         )
@@ -4717,7 +4816,7 @@
     )
     (pin "1" (uuid e9fb0b02-6a7b-44d5-80fb-c10d7e49c055))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR021") (unit 1)
         )
@@ -4742,7 +4841,7 @@
     )
     (pin "1" (uuid cdd957f9-787f-435d-8cd0-c17fbaa0c8c8))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR05") (unit 1)
         )
@@ -4759,16 +4858,22 @@
     (property "Value" "3.3v" (at 157.48 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Diode_SMD:D_1206_3216Metric" (at 156.21 63.5 90)
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 156.21 63.5 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 156.21 63.5 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFG" "Diodes Incorporated" (at 156.21 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "PN" "BZT52C3V3-7-F" (at 156.21 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid e9444df4-2b24-411e-ad15-bcd9b850f1eb))
     (pin "2" (uuid 81d05ed8-ee1e-48e5-b0e4-cfec50939761))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "D5") (unit 1)
         )
@@ -4793,7 +4898,7 @@
     )
     (pin "1" (uuid 98a1e67f-9be4-4a2d-ab31-d1ef31f4d547))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR011") (unit 1)
         )
@@ -4818,7 +4923,7 @@
     )
     (pin "1" (uuid 0c0a237b-0b77-46b9-9b2d-abbcbd88792c))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR07") (unit 1)
         )
@@ -4843,7 +4948,7 @@
     )
     (pin "1" (uuid 08f36228-a72f-44d5-a734-d637730e68f8))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR031") (unit 1)
         )
@@ -4866,10 +4971,16 @@
     (property "Datasheet" "~" (at 143.51 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFG" "YAEGO" (at 143.51 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "PN" "RC1206FR-071KL" (at 143.51 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 6e47cbce-393f-4498-ab9b-352b6b4d3664))
     (pin "2" (uuid 23ac6d7f-4ca6-4d05-b2f8-e88bc05ee7c4))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "R6") (unit 1)
         )
@@ -4894,9 +5005,34 @@
     )
     (pin "1" (uuid e4149c43-d902-45c4-ad8c-bec862760d4b))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR039") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 96.52 30.48 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 493ea01f-8ab5-4f2e-9739-55a99b1bb6d5)
+    (property "Reference" "#PWR042" (at 96.52 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 96.647 34.8742 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 96.52 30.48 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 96.52 30.48 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c01e7064-b54b-4b23-89aa-3efbee1356ea))
+    (instances
+      (project "Dynamo"
+        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -4930,7 +5066,7 @@
     (pin "5" (uuid da1524a9-7a93-49a2-a49f-aaf7ac815474))
     (pin "6" (uuid 0e9320ce-a40a-4e3c-a4d2-b9fdf9c9f886))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "JUSB1") (unit 1)
         )
@@ -4956,10 +5092,13 @@
     (property "PN" "156120RS75300" (at 58.42 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFG" "Wurth Elektronik " (at 58.42 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 6beba180-6a27-48f3-a23f-abbef89a99e4))
     (pin "2" (uuid 64c4b0bb-d2f2-438e-a10c-c8396d0e2e5b))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "D1") (unit 1)
         )
@@ -4998,12 +5137,44 @@
     (pin "5" (uuid 107d79ab-0eea-4084-98fe-d5a6c001ef33))
     (pin "6" (uuid 94c985b6-f320-47dc-b3d4-3e25fd58b581))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U1") (unit 1)
         )
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
           (reference "U1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Small") (at 96.52 25.4 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 59a7ca4b-d15e-4ac5-8fd3-7e7cd71346cd)
+    (property "Reference" "CU13" (at 98.8568 24.2316 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "0.1uF" (at 98.8568 26.543 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 96.52 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 96.52 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFG" "KEMET" (at 96.52 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "PN" "C1206C104K5RAC7210" (at 96.52 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9bbf14f5-d199-445a-a0d3-42666bf9c3b5))
+    (pin "2" (uuid 67e214e1-ce58-497f-8ba1-bd8b673f0adb))
+    (instances
+      (project "Dynamo"
+        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
+          (reference "CU13") (unit 1)
         )
       )
     )
@@ -5033,7 +5204,7 @@
     (pin "1" (uuid 1a284ce9-013d-45e3-9f41-d43c5bd8bd4d))
     (pin "2" (uuid b380ed50-7a1f-4b91-a185-59dd0d20cc91))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "C2") (unit 1)
         )
@@ -5059,10 +5230,16 @@
     (property "Datasheet" "~" (at 143.51 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFG" "YAEGO" (at 143.51 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "PN" "RC1206FR-071KL" (at 143.51 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d81c1a3a-658d-4615-a138-c7d84c043986))
     (pin "2" (uuid 93993a62-9daf-4dc2-b518-859946c3ba5b))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "R9") (unit 1)
         )
@@ -5087,7 +5264,7 @@
     )
     (pin "1" (uuid 053b34d4-d360-4dd5-9df4-4cd54a6bfd85))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR01") (unit 1)
         )
@@ -5112,7 +5289,7 @@
     )
     (pin "1" (uuid 3d58f3c6-83df-4cc5-af5d-f937082a03ac))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR034") (unit 1)
         )
@@ -5135,16 +5312,16 @@
     (property "Datasheet" "~" (at 52.07 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MFG" "Bourns" (at 52.07 97.79 0)
+    (property "MFG" "YAEGO" (at 52.07 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "PN" "CR1206-FX-1001ELF" (at 52.07 97.79 0)
+    (property "PN" "RC1206FR-071KL" (at 52.07 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0cb508bc-cf96-4db1-a583-9f47ac72e146))
     (pin "2" (uuid 6d7b9040-9073-4dba-8f80-42fe031759ce))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "R2") (unit 1)
         )
@@ -5172,7 +5349,7 @@
     )
     (pin "1" (uuid d3e58141-9f3d-4470-bd8c-5f81b42f9107))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR018") (unit 1)
         )
@@ -5197,7 +5374,7 @@
     )
     (pin "1" (uuid 0f8a1d61-3434-4f63-b051-a2f18f388dc0))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR020") (unit 1)
         )
@@ -5229,7 +5406,7 @@
     (pin "1" (uuid 3c4eb9d9-6887-4767-8c5f-b2538d9ffc11))
     (pin "2" (uuid c8d12325-816b-4414-82e6-cabd344d8a25))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "C7") (unit 1)
         )
@@ -5252,16 +5429,16 @@
     (property "Datasheet" "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" (at 261.62 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MFG" "Bourns" (at 261.62 25.4 0)
+    (property "MFG" "YAEGO" (at 261.62 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "PN" "CR1206-FX-1002ELF" (at 261.62 25.4 0)
+    (property "PN" "RC1206FR-1310KL" (at 261.62 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1762a9b7-cd2b-4a93-898a-d0195412924f))
     (pin "2" (uuid 891aceeb-9979-46a9-b480-87ea9d4b11d4))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "R4") (unit 1)
         )
@@ -5286,7 +5463,7 @@
     )
     (pin "1" (uuid 917909f0-3a54-4225-9442-59809a2f2ead))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR013") (unit 1)
         )
@@ -5306,16 +5483,22 @@
     (property "Value" "3.3v" (at 152.4 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Diode_SMD:D_1206_3216Metric" (at 151.13 63.5 90)
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 151.13 63.5 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 151.13 63.5 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFG" "Diodes Incorporated" (at 151.13 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "PN" "BZT52C3V3-7-F" (at 151.13 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 59217553-0ca2-47fe-a0e0-53ae4059308f))
     (pin "2" (uuid 34269558-c117-4f20-b8c1-f98c6a7dd32d))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "D3") (unit 1)
         )
@@ -5338,10 +5521,16 @@
     (property "Datasheet" "~" (at 143.51 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFG" "YAEGO" (at 143.51 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "PN" "RC1206FR-071KL" (at 143.51 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 475fd8b3-960c-412e-b9c3-8a01fb1d9d1f))
     (pin "2" (uuid 49cfe2a9-557d-4450-8c60-d65096818822))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "R7") (unit 1)
         )
@@ -5366,7 +5555,7 @@
     )
     (pin "1" (uuid 99c91b06-0dd6-4cbd-b849-62afd3e7b37a))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR09") (unit 1)
         )
@@ -5398,7 +5587,7 @@
     (pin "1" (uuid a98f08f8-a797-4089-91ae-d20479a4c73d))
     (pin "2" (uuid f0c72d34-4807-4ecd-b0bd-d6c2a136c77e))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "C3") (unit 1)
         )
@@ -5426,7 +5615,7 @@
     )
     (pin "1" (uuid 353f2147-c0d7-4b7c-8d76-ee921b0e208a))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR035") (unit 1)
         )
@@ -5451,7 +5640,7 @@
     )
     (pin "1" (uuid 8d80d62d-5eab-4d2b-b207-28ead58fb5b9))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR027") (unit 1)
         )
@@ -5476,7 +5665,7 @@
     )
     (pin "1" (uuid 9f761564-99c8-4604-a8d4-4d266a0cb95d))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR023") (unit 1)
         )
@@ -5493,16 +5682,22 @@
     (property "Value" "3.3v" (at 149.86 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Diode_SMD:D_1206_3216Metric" (at 148.59 63.5 90)
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 148.59 63.5 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 148.59 63.5 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFG" "Diodes Incorporated" (at 148.59 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "PN" "BZT52C3V3-7-F" (at 148.59 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 97238636-6c91-4085-b50b-18407814176c))
     (pin "2" (uuid bdc4708a-4a02-4a37-8d79-06264da0c648))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "D2") (unit 1)
         )
@@ -5527,7 +5722,7 @@
     )
     (pin "1" (uuid a113c447-4ce4-455b-bda9-76c899f8ba74))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR036") (unit 1)
         )
@@ -5559,7 +5754,7 @@
     (pin "1" (uuid 42240893-0dc7-473e-a842-f44c51ad889c))
     (pin "2" (uuid 9cc1b2af-f1bc-45bf-8431-8b89cf2a96a1))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "C4") (unit 1)
         )
@@ -5594,7 +5789,7 @@
     (pin "1" (uuid fbdc4151-02c9-4f54-853a-92661d4cbe62))
     (pin "2" (uuid 7ec13b47-9891-438d-a3e3-6e5900242c0a))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "L1") (unit 1)
         )
@@ -5622,9 +5817,34 @@
     )
     (pin "1" (uuid e08806a7-d3da-4906-b90b-4e1aee612993))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR025") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 86.36 30.48 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b04129d1-ba7d-4df3-99d5-c77a952976ff)
+    (property "Reference" "#PWR044" (at 86.36 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 86.487 34.8742 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 86.36 30.48 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 86.36 30.48 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 86fd68ac-a136-4bcc-aeca-2243276cef0c))
+    (instances
+      (project "Dynamo"
+        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -5645,16 +5865,16 @@
     (property "Datasheet" "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" (at 134.62 20.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MFG" "Bourns" (at 134.62 20.32 0)
+    (property "MFG" "YAEGO" (at 134.62 20.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "PN" "CR1206-FX-1002ELF" (at 134.62 20.32 0)
+    (property "PN" "RC1206FR-1310KL" (at 134.62 20.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ef2b766f-69cd-4e17-9154-24da55655a1c))
     (pin "2" (uuid 8dfda1db-df47-427a-96aa-cf2a5b283622))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "R3") (unit 1)
         )
@@ -5679,7 +5899,7 @@
     )
     (pin "1" (uuid 54fb310a-60f0-479d-ad3a-6369822bcd2e))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR041") (unit 1)
         )
@@ -5702,10 +5922,16 @@
     (property "Datasheet" "~" (at 143.51 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFG" "YAEGO" (at 143.51 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "PN" "RC1206FR-071KL" (at 143.51 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid bc7726e8-347a-4204-b3ad-7ea876fa15a7))
     (pin "2" (uuid 6d78621c-2c84-4a41-8c3a-ebf48b10d386))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "R8") (unit 1)
         )
@@ -5730,7 +5956,7 @@
     )
     (pin "1" (uuid 6776d860-826d-4ca5-b27c-cdb474f1e346))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR014") (unit 1)
         )
@@ -5753,16 +5979,16 @@
     (property "Datasheet" "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" (at 170.18 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MFG" "Bourns" (at 170.18 25.4 0)
+    (property "MFG" "YAEGO" (at 170.18 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "PN" "CR1206-FX-1002ELF" (at 170.18 25.4 0)
+    (property "PN" "RC1206FR-1310KL" (at 170.18 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2d33b6c7-0cb0-49b7-a8a8-262c210b71d9))
     (pin "2" (uuid 14d4b59f-96e8-4849-8314-56816455823d))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "R5") (unit 1)
         )
@@ -5795,7 +6021,7 @@
     (pin "2" (uuid e7cc8597-db9e-4f3d-867d-450d1f300318))
     (pin "3" (uuid e2070c35-79c9-4158-b293-52712d0e0e56))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U11") (unit 1)
         )
@@ -5866,7 +6092,7 @@
     (pin "8" (uuid eb8cfae4-501e-420a-9bde-b702b6c80d0b))
     (pin "9" (uuid ecfac00c-e077-4dce-9b30-1298184ce53c))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U10") (unit 1)
         )
@@ -5891,7 +6117,7 @@
     )
     (pin "1" (uuid 22dbb62d-753a-4e89-a0a0-5eb51134165a))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR030") (unit 1)
         )
@@ -5916,7 +6142,7 @@
     )
     (pin "1" (uuid 429b5579-0762-4c47-9776-e6255ce41cea))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR038") (unit 1)
         )
@@ -5933,16 +6159,22 @@
     (property "Value" "3.3v" (at 154.94 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Diode_SMD:D_1206_3216Metric" (at 153.67 63.5 90)
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 153.67 63.5 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 63.5 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MFG" "Diodes Incorporated" (at 153.67 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "PN" "BZT52C3V3-7-F" (at 153.67 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 54afed3e-0fe8-40b8-b52b-22a523d11364))
     (pin "2" (uuid 1c2f6d54-81d8-4df7-aaa9-44ab147d92be))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "D4") (unit 1)
         )
@@ -5967,7 +6199,7 @@
     )
     (pin "1" (uuid 3587fec2-7a82-413a-a84f-5663ae22709e))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR03") (unit 1)
         )
@@ -5992,7 +6224,7 @@
     )
     (pin "1" (uuid 7624b069-c00b-43bc-8c77-eb693ea31152))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR029") (unit 1)
         )
@@ -6017,7 +6249,7 @@
     )
     (pin "1" (uuid 8d184a71-8540-4e53-b9da-45f3abb31c8d))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR040") (unit 1)
         )
@@ -6042,7 +6274,7 @@
     )
     (pin "1" (uuid 7907eeb8-721e-4908-98b3-a5d9ccf6688f))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR037") (unit 1)
         )
@@ -6067,7 +6299,7 @@
     )
     (pin "1" (uuid 87cab96e-954a-487f-86bd-f7f619f12c1b))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR019") (unit 1)
         )
@@ -6090,16 +6322,16 @@
     (property "Datasheet" "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" (at 102.87 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MFG" "Bourns" (at 102.87 162.56 0)
+    (property "MFG" "YAEGO" (at 102.87 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "PN" "CR1206-FX-1002ELF" (at 102.87 162.56 0)
+    (property "PN" "RC1206FR-1310KL" (at 102.87 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 88b20843-bd49-4d16-ab05-350ae95a4590))
     (pin "2" (uuid 399237ab-dd6a-4aab-8a80-c23663e27144))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "R10") (unit 1)
         )
@@ -6134,7 +6366,7 @@
     (pin "4" (uuid 05b88b15-1c82-49ab-8afb-1f87348cfa0f))
     (pin "5" (uuid 6008efce-1e93-4c86-bef7-88fcaa7ac7f4))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U5") (unit 1)
         )
@@ -6169,7 +6401,7 @@
     (pin "4" (uuid bbaca6b2-6e27-4a96-8b57-196a942be40e))
     (pin "5" (uuid 6e3ae97d-ebec-48b1-a5fb-a4ee5cbda201))
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U4") (unit 1)
         )
@@ -6188,7 +6420,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "Booster 4ch ESP32"
+      (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9" (page "2"))
       )
     )
