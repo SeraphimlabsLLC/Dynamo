@@ -1,11 +1,23 @@
-#include "driver/uart.h"
+//Contains some code snippets from DCC-EX ESP32 branch
+#pragma once
 #include "driver/gpio.h"
+#include "driver/uart.h"
+#include "driver/i2c.h"
+#include "driver/rmt.h"
+#include "soc/rmt_reg.h"
+#include "soc/rmt_struct.h"
 //Use config.h if present, otherwise defaults
 #if __has_include ( "config.h")
   #include "config.h"
 #else
   #include "config.example.h"
 #endif
+
+// make calculations easy and set up for microseconds. Taken from DCC-EX DCCRMT.h
+#define RMT_CLOCK_DIVIDER 80
+#define DCC_1_HALFPERIOD 58  //4640 // 1 / 80000000 * 4640 = 58us
+#define DCC_0_HALFPERIOD 100 //8000
+
 class TrackChannel {
   //Very similar to DCC-EX class MotorDriver, but no dual signal support. 
   public:
@@ -20,9 +32,13 @@ class TrackChannel {
 };
 
 void gpio_init();
+void adc_init();
 
 void tty_init();
-
 void i2c_init();
 
-void rmt_init();
+void rmt_rx_init(); //Initialize RMT RX
+void rmt_tx_init(); //Initialize RMT TX
+void setDCCBit1(rmt_item32_t* item);
+void setDCCBit0(rmt_item32_t* item);
+void setEOT(rmt_item32_t* item);

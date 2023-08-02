@@ -4,6 +4,11 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Dynamo - DCC 4 channel booster")
+    (company "SeraphimLabs LLC")
+  )
+
   (lib_symbols
     (symbol "74AHCT1G86-74xGxx_1" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U5" (at -1.27 0 0)
@@ -4725,9 +4730,6 @@
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "C6") (unit 1)
         )
-        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
-          (reference "C11") (unit 1)
-        )
       )
     )
   )
@@ -4790,9 +4792,6 @@
     (instances
       (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
-          (reference "C5") (unit 1)
-        )
-        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
           (reference "C5") (unit 1)
         )
       )
@@ -5102,9 +5101,6 @@
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "D1") (unit 1)
         )
-        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
-          (reference "D2") (unit 1)
-        )
       )
     )
   )
@@ -5139,9 +5135,6 @@
     (instances
       (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
-          (reference "U1") (unit 1)
-        )
-        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
           (reference "U1") (unit 1)
         )
       )
@@ -5206,9 +5199,6 @@
     (instances
       (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
-          (reference "C2") (unit 1)
-        )
-        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
           (reference "C2") (unit 1)
         )
       )
@@ -5323,9 +5313,6 @@
     (instances
       (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
-          (reference "R2") (unit 1)
-        )
-        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
           (reference "R2") (unit 1)
         )
       )
@@ -5467,9 +5454,6 @@
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "#PWR013") (unit 1)
         )
-        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
-          (reference "#PWR013") (unit 1)
-        )
       )
     )
   )
@@ -5589,9 +5573,6 @@
     (instances
       (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
-          (reference "C3") (unit 1)
-        )
-        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
           (reference "C3") (unit 1)
         )
       )
@@ -5758,9 +5739,6 @@
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "C4") (unit 1)
         )
-        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
-          (reference "C4") (unit 1)
-        )
       )
     )
   )
@@ -5792,9 +5770,6 @@
       (project "Dynamo"
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "L1") (unit 1)
-        )
-        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9/9cefd538-1e06-4e68-b561-c42257c55829"
-          (reference "L2") (unit 1)
         )
       )
     )
@@ -6405,23 +6380,6 @@
         (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9"
           (reference "U4") (unit 1)
         )
-      )
-    )
-  )
-
-  (sheet (at 213.36 271.78) (size 173.99 85.09) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 9cefd538-1e06-4e68-b561-c42257c55829)
-    (property "Sheetname" "PWR_Mod_5Vand3V3" (at 213.36 271.0684 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "PWR_Mod_5Vand3V3.kicad_sch" (at 213.36 357.4546 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "Dynamo"
-        (path "/ca466827-dc9b-41a9-af5b-af8cb0cad0b9" (page "2"))
       )
     )
   )

@@ -715,7 +715,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "C:/Users/Sean/Documents/Projects/Motor Shield Adapter/",
+    "plot_directory": "S:/Projects/Dynamo/",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -729,10 +729,6 @@
     [
       "ca466827-dc9b-41a9-af5b-af8cb0cad0b9",
       ""
-    ],
-    [
-      "9cefd538-1e06-4e68-b561-c42257c55829",
-      "PWR_Mod_5Vand3V3"
     ]
   ],
   "text_variables": {}
