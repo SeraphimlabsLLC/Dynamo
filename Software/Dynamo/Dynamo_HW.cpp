@@ -1,8 +1,5 @@
 #include "Dynamo_HW.h"
 
-//Architecture:
-#define CORE_TYPE = ESP32_S3
-
 //Use config.h if present, otherwise defaults
 #if __has_include ( "config.h")
   #include "config.h"
@@ -10,44 +7,10 @@
   #include "config.example.h"
 #endif
 
-
-//TTY settings:
-#define TTY_BAUD 115200 //must match other endpoint
-#define TTY_UART 0
-#define TTY_TXD_PIN GPIO_NUM_43 //GPIO43(U0TXD)
-#define TTY_RXD_PIN GPIO_NUM_44 //GPIO44(U0RXD?
-#define TTY_TX_BUFF 256
-#define TTY_RX_BUFF 4096
-
-//I2C settings: 
-#define I2C_SDA_PIN 17 //GPIO17
-#define I2C_SCL_PIN 18 //GPIO18
-#define I2C_MASTER false
-#define I2C_SLAVE_ADDR 43
-#define I2C_CLOCK 40000
-
-#define I2C_SLAVE_PORT 0
-#define I2C_TX_BUFF 256
-#define I2C_RX_BUFF 4096
-
-//Booster Control IO and RMT:
-#define DIR_MONITOR 38 //GPIO38
-#define DIR_OVERRIDE 21 //GPIO21
-#define MASTER_EN 15 //GPIO15
-//On ESP32-S3, RMT channels 0-3 are TX only and 4-7 are RX only
-#define DIR_MONITOR_RMT 4
-#define DIR_OVERRIDE_RMT 0
-
-//Track Configurations
-//TrackChannel(int enable_out_pin, int reverse_pin, int brake_pin, int adc_pin, float adcscale, int tripMilliamps )
-//TrackChannel(9, 6, 13, 1, 0, 4090); //Track 1
-//TrackChannel(10, 7, 14, 2, 0, 4090); //Track 2
-//TrackChannel(11, 8, 47, 3, 0, 4090); //Track 3
-//TrackChannel(12, 9, 48, 4, 0, 4090); //Track 4
-
 //ADC Settings:
 #define ADC_DMAX 4095 //4095 in single shot, 8191 in continuous
 #define ADC_VMAX 3.1 //Max readable voltage is actually 3.1v using mode ADC_ATTEN_DB_11  
+
 
 //Control GPIO and RMT initialization
 void gpio_init(){
@@ -63,8 +26,6 @@ void gpio_init(){
     gpio_reset_pin(gpio_num_t(DIR_OVERRIDE));
     gpio_set_direction(gpio_num_t(DIR_OVERRIDE), GPIO_MODE_OUTPUT);
     gpio_set_pull_mode(gpio_num_t(DIR_OVERRIDE), GPIO_PULLDOWN_ONLY);  
-
-
   return;
 }
 
@@ -119,10 +80,10 @@ void rmt_rx_init(){
   rmt_rx_config.channel = rmt_channel_t(DIR_MONITOR_RMT);
   rmt_rx_config.clk_div = RMT_CLOCK_DIVIDER;
   rmt_rx_config.gpio_num = gpio_num_t(DIR_MONITOR);
-  rmt_rx_config.mem_block_num = 2; // With longest DCC packet 11 inc checksum (future expansion)
-                            // number of bits needed is 22preamble + start +
-                            // 11*9 + extrazero + EOT = 124
-                            // 2 mem block of 64 RMT items should be enough
+/* NMRA allows up to 32 bytes per packet, the max length would be 301 bits transmitted and need 38 bytes (3 bits extra). 
+ * DCC_EX is limited to only 11 bytes max. Much easier to account for and uses a smaller buffer. 
+ */
+  rmt_rx_config.mem_block_num = 3; 
   ESP_ERROR_CHECK(rmt_config(&rmt_rx_config));
   // NOTE: ESP_INTR_FLAG_IRAM is *NOT* included in this bitmask
   ESP_ERROR_CHECK(rmt_driver_install(rmt_rx_config.channel, 0, ESP_INTR_FLAG_LOWMED|ESP_INTR_FLAG_SHARED));   
@@ -145,23 +106,44 @@ void rmt_tx_init(){
   ESP_ERROR_CHECK(rmt_driver_install(rmt_tx_config.channel, 0, ESP_INTR_FLAG_LOWMED|ESP_INTR_FLAG_SHARED));    
 }
 
-TrackChannel::TrackChannel(gpio_num_t enable_out_pin, gpio_num_t reverse_pin, gpio_num_t brake_pin, gpio_num_t adc_pin, float adcscale, int tripMilliamps ){
-//Configure the necessary GPIOs and ADC input
-    gpio_reset_pin(enable_out_pin);
-    gpio_set_direction(enable_out_pin, GPIO_MODE_OUTPUT);
-    gpio_set_pull_mode(enable_out_pin, GPIO_PULLDOWN_ONLY);
-    gpio_reset_pin(reverse_pin);
-    gpio_set_direction(reverse_pin, GPIO_MODE_OUTPUT);
-    gpio_set_pull_mode(reverse_pin, GPIO_PULLDOWN_ONLY);
-    gpio_reset_pin(brake_pin);
-    gpio_set_direction(brake_pin, GPIO_MODE_OUTPUT);
-    gpio_set_pull_mode(brake_pin, GPIO_PULLDOWN_ONLY);
-    gpio_reset_pin(adc_pin);
+TrackChannel::TrackChannel(uint8_t enable_out_pin, uint8_t enable_in_pin, uint8_t reverse_pin, uint8_t brake_pin, uint8_t adc_pin, uint16_t adcscale, uint16_t adc_overload_trip){
+//TrackChannel::TrackChannel(){
+    TrackChannel::powerstate = 0; //Power is off by default
+    TrackChannel::powermode = 0; //Mode is not configured by default
+    //Copy config values to class values
+    TrackChannel::enable_out_pin = enable_out_pin;
+    TrackChannel::enable_in_pin = enable_in_pin;
+    TrackChannel::reverse_pin = reverse_pin;
+    TrackChannel::brake_pin = brake_pin;
+    TrackChannel::adc_pin = adc_pin;
+    TrackChannel::adcscale = adcscale;
+    TrackChannel::adc_overload_trip = adc_overload_trip;
+    //Configure GPIOs
+    gpio_reset_pin(gpio_num_t(enable_out_pin));
+    gpio_set_direction(gpio_num_t(enable_out_pin), GPIO_MODE_OUTPUT);
+    gpio_set_pull_mode(gpio_num_t(enable_out_pin), GPIO_PULLDOWN_ONLY);
+    gpio_reset_pin(gpio_num_t(reverse_pin));
+    gpio_set_direction(gpio_num_t(reverse_pin), GPIO_MODE_OUTPUT);
+    gpio_set_pull_mode(gpio_num_t(reverse_pin), GPIO_PULLDOWN_ONLY);
+    gpio_reset_pin(gpio_num_t(brake_pin));
+    gpio_set_direction(gpio_num_t(brake_pin), GPIO_MODE_OUTPUT);
+    gpio_set_pull_mode(gpio_num_t(brake_pin), GPIO_PULLDOWN_ONLY);
+    gpio_reset_pin(gpio_num_t(adc_pin));
 }
 
-int mACheck() {
+int adc_read() {
   //todo: read ADC
   return 0;
+}
+
+void EnableOut(bool pinstate){ //Write to enable
+  //gpio_set_level(gpio_num_t(ChannelList[track].enable_out_pin), pinstate);
+}
+void ReverseOut(bool pinstate){ //Write to reverse
+  //gpio_set_level(gpio_num_t(ChannelList[track].reverse_pin), pinstate);
+}
+void BrakeOut(bool pinstate){ //Write to brake
+  //gpio_set_level(gpio_num_t(ChannelList[track].brake_pin), pinstate);
 }
 
 //From DCC-EX ESP32 branch DCCRMT.cpp:
