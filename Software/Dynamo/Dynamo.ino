@@ -10,21 +10,14 @@ bool Master_Enable = false; //true to enable outputs
 uint8_t next_adc_read = 0; //Keep track of which track channel is next to have its adc read
 
 //Track struct setup. If more than 4 are possible, add more definitions here. 
-#define MAX_TRACK 1 //Track index counts from 0.
+#define MAX_TRACK 3 //Track index counts from 0.
 TrackChannel ChannelList[]{ //Define track channel objects
   //TrackChannel(enable_out_pin, enable_in_pin, uint8_t reverse_pin, brake_pin, adc_pin, adcscale, adc_overload_trip)
   TrackChannel(ENAO_1, 0, REV_1, BRK_1, AIN_1, ADC_TICKS_PER_AMP_1, ADC_TRIP_TICKS_1),
   TrackChannel(ENAO_2, 0, REV_2, BRK_2, AIN_2, ADC_TICKS_PER_AMP_2, ADC_TRIP_TICKS_2),
-#ifdef ENAO_3 
-  #undef MAX_TRACK
-  #define MAX_TRACK 2 //Track index counts from 0.
   TrackChannel(ENAO_3, 0, REV_3, BRK_3, AIN_3, ADC_TICKS_PER_AMP_3, ADC_TRIP_TICKS_3),
-#endif
-#ifdef ENAO_4
-  #undef MAX_TRACK
-  #define MAX_TRACK 3 //Track index counts from 0. 
   TrackChannel(ENAO_4, 0, REV_4, BRK_4, AIN_4, ADC_TICKS_PER_AMP_4, ADC_TRIP_TICKS_4), 
-#endif 
+ 
 };
 
 void setup() {
