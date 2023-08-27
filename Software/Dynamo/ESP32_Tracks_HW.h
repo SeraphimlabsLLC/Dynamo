@@ -1,5 +1,6 @@
 //Contains some code snippets from DCC-EX ESP32 branch
-#pragma once
+#define ESP32_TRACKS__HW_H
+
 //Use config.h if present, otherwise defaults
 #if __has_include ( "config.h")
   #include "config.h"
@@ -91,6 +92,7 @@ class TrackChannel {
     uint8_t brake_pin;
     uint8_t adc_pin;
     TrackChannel(uint8_t enable_out_pin, uint8_t enable_in_pin, uint8_t reverse_pin, uint8_t brake_pin, uint8_t adc_pin, uint16_t adcscale, uint16_t adc_overload_trip);
+    //void ConfigureTrack(uint8_t track); //Updates GPIO modes when changing powermode
 };
 
 void gpio_init();

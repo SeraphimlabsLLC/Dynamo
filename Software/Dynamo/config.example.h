@@ -1,4 +1,6 @@
-//#include "Dynamo_HW.h" //Hardware definitions for Dynamo board using ESP32-S3
+#ifndef ESP32_TRACKS_HW_H
+  #include "ESP32_Tracks_HW.h"
+#endif
 
 #define ENABLE_TTY = true
 #define TTY_BAUD = 115200 //must match other endpoint

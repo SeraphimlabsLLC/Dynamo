@@ -6017,7 +6017,7 @@
     (property "Value" "ESP32-S3-WROOM-1" (at 217.17 29.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "RF_Module:ESP32-S3-WROOM-1U" (at 215.9 116.84 0)
+    (property "Footprint" "Espressif:ESP32-S3-WROOM-1U" (at 215.9 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf" (at 215.9 119.38 0)
