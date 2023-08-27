@@ -1,18 +1,28 @@
 //Contains some code snippets from DCC-EX ESP32 branch
 #define ESP32_TRACKS__HW_H
 
-//Use config.h if present, otherwise defaults
-#if __has_include ( "config.h")
-  #include "config.h"
-#else
-  #include "config.example.h"
-#endif
 #include "driver/gpio.h"
 #include "driver/uart.h"
 #include "driver/i2c.h"
 #include "driver/rmt.h"
+#include "driver/adc.h"
 #include "soc/rmt_reg.h"
 #include "soc/rmt_struct.h"
+
+//ADC Settings:
+#define ADC_DMAX 4095 //4095 in single shot, 8191 in continuous
+#define ADC_VMAX 3.1 //Max readable voltage is actually 3.1v using mode ADC_ATTEN_DB_11  
+
+/*Track Configurations
+ * Format: Enable Out pin, Enable In pin, rev/sig pin, brake pin, adc pin, adc ticks per amp, adc trip ticks
+ * adc ticks per amp is calculated to match the hardware. 
+ * adc trip ticks is calculated to where the hardware must shut off
+ */
+
+#define TRACK_1 DCCSigs[0].SetupHW(9, 0, 6, 13, 1, 819, 4090);
+#define TRACK_2 DCCSigs[1].SetupHW(10, 0, 7,  14, 1, 819, 4090);
+#define TRACK_3 DCCSigs[2].SetupHW(11, 0, 8, 48, 3, 819, 4090);
+#define TRACK_4 DCCSigs[3].SetupHW(12, 0, 9, 48, 4, 819, 4090);
 
 //TTY settings:
 #define TTY_BAUD 115200 //must match other endpoint
@@ -43,66 +53,38 @@
 #define DCC_1_HALFPERIOD 58  //4640 // 1 / 80000000 * 4640 = 58us
 #define DCC_0_HALFPERIOD 100 //8000
 
-//Track Configurations
-#define ENAO_1 9
-#define REV_1 6
-#define BRK_1 13
-#define AIN_1 1
-#define ADC_TICKS_PER_AMP_1 819 //Ticks per Amp. On outputs capable of <1A, this will be larger than 4095.
-#define ADC_TRIP_TICKS_1 4090 //ADC ticks at which reverse/cutofff is necessary.
-
-#define ENAO_2 10
-#define REV_2 7
-#define BRK_2 14
-#define AIN_2 2
-#define ADC_TICKS_PER_AMP_2 819
-#define ADC_TRIP_TICKS_2 4090
-
-#define ENAO_3 11
-#define REV_3 8
-#define BRK_3 47
-#define AIN_3 3
-#define ADC_TICKS_PER_AMP_3 819
-#define ADC_TRIP_TICKS_3 4090
-
-#define ENAO_4 12
-#define REV_4 9
-#define BRK_4 48
-#define AIN_4 4
-#define ADC_TICKS_PER_AMP_4 819
-#define ADC_TRIP_TICKS_4 4090
-
 class TrackChannel {
   //Very similar to DCC-EX class MotorDriver, but no dual signal support. 
   public:
     uint8_t powerstate; //0 = off, 1 = overload, 2 = on_forward, 3 =on_reversed. 
     uint8_t powermode; //0 = none, 1 = DCC_external, 2 = DCC_override, 3 = DC.
-    uint16_t adcscale; //ADC ticks per amp. This can be higher than the adc max value if the hardware is <1A max. 
-    uint16_t adc_overload_trip; //Pre-calculate trip threshold in adc ticks
-    uint16_t adc_base_ticks; //value read from ADC when output is off for calc reference.
     uint16_t adc_previous_ticks; //value read on prior scan
     uint16_t adc_current_ticks; //value read on most recent scan
-    int adc_read();
-    void EnableOut(bool pinstate); //Write to enable
-    void ReverseOut(bool pinstate); //Write to reverse
-    void BrakeOut(bool pinstate); //Write to brake
-    uint8_t enable_out_pin;
-    uint8_t enable_in_pin; //Not used in Dynamo, will be used in ArchBridge. 
-    uint8_t reverse_pin;
-    uint8_t brake_pin;
-    uint8_t adc_pin;
-    TrackChannel(uint8_t enable_out_pin, uint8_t enable_in_pin, uint8_t reverse_pin, uint8_t brake_pin, uint8_t adc_pin, uint16_t adcscale, uint16_t adc_overload_trip);
-    //void ConfigureTrack(uint8_t track); //Updates GPIO modes when changing powermode
+    void SetupHW(uint8_t en_out_pin, uint8_t en_in_pin, uint8_t rev_pin, uint8_t brk_pin, uint8_t adcpin, uint16_t adcscale, uint16_t adc_ol_trip); 
+    void ModeChange (uint8_t newmode);
+    void StateChange(uint8_t newstate);
+    void adc_read();
+  private:
+    uint16_t adc_scale; //ADC ticks per amp. This can be higher than the adc max value if the hardware is <1A max. 
+    uint16_t adc_overload_trip; //Pre-calculate trip threshold in adc ticks
+    uint8_t overload_state; //holds previous state on OL, or 0. 
+    uint16_t overload_cooldown; //Holds ticks remaining before retry
+    uint16_t adc_base_ticks; //value read from ADC when output is off for calc reference.
+    gpio_num_t enable_out_pin;
+    gpio_num_t enable_in_pin; //Not used in Dynamo, will be used in ArchBridge. 
+    gpio_num_t reverse_pin;
+    gpio_num_t brake_pin;
+    gpio_num_t adc_pin;
 };
+void ESP32_Tracks_Setup();
 
-void gpio_init();
-void adc_init();
+void ESP_tty_init();
+void ESP_i2c_init();
 
-void tty_init();
-void i2c_init();
+void ESP_rmt_rx_init(); //Initialize RMT RX
+void ESP_rmt_tx_init(); //Initialize RMT TX
 
-void rmt_rx_init(); //Initialize RMT RX
-void rmt_tx_init(); //Initialize RMT TX
+//Move these to DCC.h? They might be needed for RMT
 void setDCCBit1(rmt_item32_t* item);
 void setDCCBit0(rmt_item32_t* item);
 void setEOT(rmt_item32_t* item);
