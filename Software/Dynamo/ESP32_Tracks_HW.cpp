@@ -2,19 +2,24 @@
   #include "ESP32_Tracks_HW.h"
 #endif
 //TrackChannel(enable_out_pin, enable_in_pin, uint8_t reverse_pin, brake_pin, adc_pin, adcscale, adc_overload_trip)
-TrackChannel DCCSigs[4]; //Define track channel objects with empty values.
+TrackChannel DCCSigs[4]; //Define track channel objects with empty value
+//bool Master_Enable = false; 
 
 void ESP32_Tracks_Setup(){ //Populates track class with values including ADC
   adc1_config_width(ADC_WIDTH_BIT_12);
   TRACK_1 //each track definition subsitites the complete function call to DCCSigs::SetupHW
+  //Serial.write("Track 1 Configured \n");
   #ifdef TRACK_2
     TRACK_2
+    //Serial.write("Track 2 Configured \n");
   #endif 
   #ifdef TRACK_3
     TRACK_3
+    //Serial.write("Track 3 Configured \n");
   #endif
   #ifdef TRACK_4
     TRACK_4
+    //Serial.write("Track 4 Configured \n");
   #endif
   #ifdef BOARD_TYPE_DYNAMO //If this is a Dynamo type booster, define these control pins.
     gpio_reset_pin(gpio_num_t(MASTER_EN));
@@ -121,7 +126,7 @@ void TrackChannel::StateChange(uint8_t newstate){
 
 void TrackChannel::adc_read() { //Needs the actual ADC read implemented still
   adc_previous_ticks = adc_current_ticks; //update value read on prior scan
-  adc_current_ticks = adc_base_ticks + 0; //Replace 0 with an actual read from the ADC
+  adc_current_ticks = adc_base_ticks + adc1_get_raw(ADC1_CHANNEL_0); //Need to make remap from gpio# to adc#
   if (adc_current_ticks > adc_overload_trip) {
     StateChange(1); //Set power state overload   
   }
@@ -186,7 +191,7 @@ void setEOT(rmt_item32_t* item) {
 
 //TTY config
 void ESP_tty_init(){ 
-
+/*
   const uart_port_t uart_num = TTY_UART;
   uart_config_t uart_config = {
     .baud_rate = TTY_BAUD,
@@ -200,7 +205,19 @@ void ESP_tty_init(){
     ESP_ERROR_CHECK(uart_driver_install(TTY_UART, TTY_TX_BUFF, TTY_RX_BUFF, 0, NULL, 0));
     ESP_ERROR_CHECK(uart_param_config(TTY_UART, &uart_config));
     ESP_ERROR_CHECK(uart_set_pin(TTY_UART, TTY_TXD_PIN, TTY_RXD_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
+    */
 return;
+}
+
+int ESP_tty_read() {
+  //example: https://mongoose.ws/documentation/tutorials/esp32/uart-bridge/
+  
+  return 0;
+}
+
+void ESP_tty_write() {
+
+  return;
 }
 
 void ESP_i2c_init(){
