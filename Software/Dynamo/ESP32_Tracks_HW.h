@@ -79,9 +79,6 @@ class TrackChannel {
 void ESP32_Tracks_Setup();
 
 void ESP_tty_init();
-int ESP_tty_read();
-void ESP_tty_write();
-
 void ESP_i2c_init();
 
 void ESP_rmt_rx_init(); //Initialize RMT RX

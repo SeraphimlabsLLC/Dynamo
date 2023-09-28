@@ -12,9 +12,7 @@ extern int max_tracks;
 bool Master_Enable = false;
 
 void setup() {
-  Serial.begin(115200);
-  Serial.write("Dynamo Loconet Interface \n");
-ESP_tty_init();
+//ESP_tty_init();
 //ESP_i2c_init();
 ESP32_Tracks_Setup();     
 }
