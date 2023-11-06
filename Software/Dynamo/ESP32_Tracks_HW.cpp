@@ -5,7 +5,12 @@
 //TrackChannel(enable_out_pin, enable_in_pin, uint8_t reverse_pin, brake_pin, adc_channel, adcscale, adc_overload_trip)
 TrackChannel DCCSigs[MAX_TRACKS]; //Define track channel objects with empty values.
 uint8_t max_tracks = 0; //Will count tracks as they are initialized. 
-bool Master_Enable = false;
+bool Master_Enable = false; 
+uint64_t Master_en_chk_time = 0; //Store when it was checked last. 
+bool Master_en_deglitch = false; //Interim value
+bool rmt_dcc_ok = true; //RMT reports a valid DCC signal. 
+extern uint64_t time_us; //Reuse time_us from main
+
 uint32_t rmt_rxdata_ptr; //RMT RX Ring Buffer locator
 
 void ESP32_Tracks_Setup(){ //Populates track class with values including ADC
@@ -218,17 +223,28 @@ uint8_t TrackChannel::CheckEnable(){ //Arch Bridge has to check enable_input_pin
   return enable_in;
 }
 
-uint8_t MasterEnable(){ //Dyamo type boards have an input for master enable. Others this always returns 1. 
-    uint8_t master_en = 1; //default value for master_en
+bool MasterEnable(){ //On Dynamo boards, read MASTER_IN twice MASTER_EN_DEGLITCH uS apart. If both agree, that is the new state. Arch_Bridge it always returns 1. 
+  //NMRA S-9.1 gives the rise/fall time as 2.5v/uS, the pin could be off for 6uS each edge.
+  
+  bool master_en = 1; //default value for master_en.
 #ifdef BOARD_TYPE_DYNAMO
-      uint8_t i = 0;
-      master_en = gpio_get_level(gpio_num_t(MASTER_EN));
-      if (master_en != Master_Enable) { //Master Enable state has changed.
-        Serial.printf("Master Enable on gpio %u state changed, new state %u \n", MASTER_EN, master_en);
-      }
+    time_us = esp_timer_get_time();
+    if ((time_us - Master_en_chk_time) > MASTER_EN_DEGLITCH){
+      master_en = gpio_get_level(gpio_num_t(MASTER_EN));  
+      if (master_en != Master_en_deglitch) { //State changed, update and rescan
+        Master_en_deglitch = master_en; 
+        master_en = Master_Enable; //Pass through the unchanged value to the return.  
+      } 
+      //Implied if master_en == Master_en_deglitch it will change Master_Enable too. 
+      Master_en_chk_time = time_us; //Update last scan time. 
+    }     
 #endif
+  master_en = master_en && rmt_dcc_ok; //Master Enable will still shut off if the RMT DCC decoder isn't getting valid packets. 
 // BOARD_TYPE_ARCHBRIDGE has no master_en input, this will always return 1. 
-  Master_Enable = master_en; //Function directly updates the Master_Enable global in addition to returning
+   if (master_en != Master_Enable) { //Master Enable state has changed.
+     Serial.printf("Master Enable on gpio %u state changed, new state %u \n", MASTER_EN, master_en);
+     Master_Enable = master_en; //Function directly updates the Master_Enable global in addition to returning
+   }  
   return master_en;
 }
 

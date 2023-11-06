@@ -1,8 +1,12 @@
 Fix Railsync input holes/pads to be larger so the socket installs correctly.
-
 Replace side-actuated boot/reset, they do not work at all. I think solder heat is melting the internals.
+Consider heartbeat LED on a spare GPIO to slow flash when the device is operating correctly.
 
-Add status LED to MASTER_EN to show when railsync input is valid.
-Consider heartbeat LED on a spare GPIO to slow flash when the device is operating correctly. 
+Add status LED to MASTER_EN to show when railsync input is valid. Also status LEDs on the output enables for good measure.
 
 Add gating to allow USB power input. An ideal diode will be needed between vin and the buck regulator so it can't backfeed.
+
+All 4 outputs must be in the same mode DC or DCC. Cannot have some DCC while others in DC, DIR + OVERRIDE won't allow it. 
+There are additional GPIOs left, it may be possible to add a gate that blocks the incoming DCC signal on tracks in DC mode. 
+
+

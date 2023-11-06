@@ -40,6 +40,7 @@
   #define DIR_MONITOR 38 //GPIO38, use for RMT Input
   #define DIR_OVERRIDE 21 //GPIO21, use for RMT Output
   #define MASTER_EN 15 //GPIO15
+  #define MASTER_EN_DEGLITCH 4 //uSec required between readings. Must have 2 of the same value to change state.
   #define ADC_MIN_OFFSET 60 //ADC is inaccurate at low values.
 
 #endif
@@ -109,7 +110,7 @@ class TrackChannel {
 void ESP_serial_init();
 void ESP32_Tracks_Setup();
 void ESP32_Tracks_Loop();
-uint8_t MasterEnable();
+bool MasterEnable();
 
 //void ESP_i2c_init();
 
