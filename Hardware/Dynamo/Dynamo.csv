@@ -22,4 +22,4 @@ Qty,Mfg Part Number,Reference(s),Value,LibPart,Footprint,Datasheet,DNP,MFG
 1,ESP32-S3-WROOM-1U-N16 ,U10,ESP32-S3-WROOM-1,Espressif:ESP32-S3-WROOM-1,RF_Module:ESP32-S3-WROOM-1U,https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf,,Expressif
 1,NCP1117ST33T3G,U11,NCP1117-3.3_SOT223,Regulator_Linear:NCP1117-3.3_SOT223,Package_TO_SOT_SMD:SOT-223-3_TabPin2,http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF,,ONSemi
 2,TXS0102DCTT,"U13, U14",TXS0102DCT,Logic_LevelTranslator:TXS0102DCT,Package_SO:SSOP-8_2.95x2.8mm_P0.65mm,http://www.ti.com/lit/gpn/txs0102,,Texas Insturments
-1,,UNO_SHIELD1,Arduino_UNO_R3,MCU_Module:Arduino_UNO_R3,Module:Arduino_UNO_R3_WithMountingHoles,https://www.arduino.cc/en/Main/arduinoBoardUno,,
+1,485-85 ,UNO_SHIELD1,Arduino_UNO_R3,MCU_Module:Arduino_UNO_R3,Module:Arduino_UNO_R3_WithMountingHoles,https://www.arduino.cc/en/Main/arduinoBoardUno,,Adafruit

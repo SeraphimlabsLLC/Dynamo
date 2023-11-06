@@ -1,0 +1,8 @@
+Fix Railsync input holes/pads to be larger so the socket installs correctly.
+
+Replace side-actuated boot/reset, they do not work at all. I think solder heat is melting the internals.
+
+Add status LED to MASTER_EN to show when railsync input is valid.
+Consider heartbeat LED on a spare GPIO to slow flash when the device is operating correctly. 
+
+Add gating to allow USB power input. An ideal diode will be needed between vin and the buck regulator so it can't backfeed.

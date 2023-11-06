@@ -4,42 +4,50 @@
 #else
   #include "config.example.h"
 #endif
+
+#ifndef ESP32_UART_H
+  #include "ESP32_uart.h"
+#endif
+
 #ifndef ESP32_TRACKS_HW_H
   #include "ESP32_Tracks_HW.h"
 #endif
+extern ESP_Uart tty; //normal serial port
+
 extern TrackChannel DCCSigs[];
-extern int max_tracks;
-bool Master_Enable = false;
+extern uint8_t max_tracks;
+uint64_t time_us = 0; 
+uint64_t last_time_us = 0;
 
 void setup() {
-//ESP_tty_init();
-//ESP_i2c_init();
-ESP32_Tracks_Setup();     
+  uint8_t master_en;
+  delay(50); //Slight delay in startup for console init. 
+  ESP_uart_init(); //Initialize tty
+  ESP32_Tracks_Setup();  
+  master_en = MasterEnable();
+  Serial.printf("Master Enable presently %u \n");
+  DCCSigs[0].ModeChange(1); //set to DCC EXT
+  DCCSigs[0].StateChange(2); //set to ON FWD
+  DCCSigs[1].ModeChange(1); //set to DCC EXT
+  DCCSigs[1].StateChange(2); //set to ON FWD
+  DCCSigs[2].ModeChange(1); //set to DCC EXT
+  DCCSigs[2].StateChange(2); //set to ON FWD
+  DCCSigs[3].ModeChange(1); //set to DCC EXT
+  DCCSigs[3].StateChange(2); //set to ON FWD
 }
 
 void loop() {
-uint8_t i = 0;
-/*
-if (Master_Enable == true){  //OK to run. Enable tracks in suitable state. 
-  while (i < max_tracks){ //Fault 
-    if (DCCSigs[i].powerstate >= 2){ //State is set to on forward or on reverse, ok to enable. 
-      gpio_set_level(gpio_num_t(DCCSigs[i].enable_out_pin), 1); //Write 1 to enable out on each track
-      DCCSigs[i].adc_previous_ticks = DCCSigs[i].adc_current_ticks; //cache previous adc reading
-      DCCSigs[i].adc_current_ticks = analogRead(DCCSigs[i].adc_pin); //update adc reading
-      if (DCCSigs[i].adc_current_ticks > DCCSigs[i].adc_overload_trip) {
-        gpio_set_level(gpio_num_t(DCCSigs[i].enable_out_pin), 0); //overload tripped, track off.
-        DCCSigs[i].powerstate = 1; //set track to overloaded so it stays off until further processing. 
-      }
-    }    
-    i++; 
+    uint8_t master_en;
+ESP32_Tracks_Loop(); //Process and update tracks
+
+
+#define HEARTBEAT_US 10000000 //10 seconds
+  time_us = esp_timer_get_time();
+  if ((time_us - last_time_us) > HEARTBEAT_US) {
+    master_en = MasterEnable();
+    Serial.printf("Master Enable presently %u \n");
+    Serial.printf("%Heartbeat scan Jitter: %u uS \n", (time_us - last_time_us - HEARTBEAT_US)); 
+    last_time_us = time_us;
   }
-} else { //Fault exists, disable all tracks. Leave track states unchanged for later re-enabling. 
-  i = 0; //reset i for the next loop
-  while (i < max_tracks){
-    gpio_set_level(gpio_num_t(DCCSigs[i].enable_out_pin), 0); //Write 0 to enable out on each track
-    //digitalWrite(DCCSigs[i].enable_out_pin, 0);
-    i++;
-  } 
-}
-*/
+
 }
