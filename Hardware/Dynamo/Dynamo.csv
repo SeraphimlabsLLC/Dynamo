@@ -1,25 +1,35 @@
-Qty,Mfg Part Number,Reference(s),Value,LibPart,Footprint,Datasheet,DNP,MFG
-2,B3U-3000P,"BOOT1, RESET1",B3U-3000P,Switch:SW_Push,Button_Switch_SMD:SW_SPST_B3U-3000P,https://www.mouser.com/datasheet/2/307/en-b3u-3615.pdf,,Omron
-1,885012208072,C1,330pf,Device:C_Small,Capacitor_SMD:C_1206_3216Metric,~,,Wurth Electronik
-3,865080542006,"C2, C4, C5",22uF,Motor Shield Adapter-rescue:CP1_Small-Device,Capacitor_SMD:CP_Elec_5x5.3,,,Wurth Electronik
-7,C1206C104K5RAC7210,"C3, C7, CU2, CU3, CU10, CU13, CU14",0.1uF,Device:C_Small,Capacitor_SMD:C_1206_3216Metric,~,,KEMET
-1,865080542006,C6,22uF,Device:C_Polarized_Small_US,Capacitor_SMD:CP_Elec_5x5.3,~,,Wurth Electronik
-1,156120RS75300,D1,LED,Device:LED,LED_SMD:LED_1206_3216Metric,https://www.mouser.com/datasheet/2/445/156120RS75300-1715573.pdf,,Wurth Elektronik 
-4,BZT52C3V3-7-F,"D2, D3, D4, D5",3.3v,Device:D_Zener_Small,Diode_SMD:D_SOD-123,~,,Diodes Incorporated
-1,105017-0001 ,JUSB1,USB_B_Micro,Connector:USB_B_Micro,Connector_USB:USB_Micro-B_Molex-105017-0001,~,,Molex
-1,74405042047,L1,4.7uH,Motor Shield Adapter-rescue:INDUCTOR-pspice,Inductor_SMD_Wurth:L_Wurth_WE-LQSH-4020,https://www.mouser.com/datasheet/2/281/JELF243A-0147-1699525.pdf,,Wuerth Electronik
-1,RC1206FR-073KL,R1,3k,Device:R,Resistor_SMD:R_1206_3216Metric,~,,YAEGO
-5,RC1206FR-071KL,"R2, R6, R7, R8, R9",1k,Device:R_Small,Resistor_SMD:R_1206_3216Metric,~,,YAEGO
-2,RC1206FR-1310KL,"R3, R10",10k,Device:R_Small,Resistor_SMD:R_1206_3216Metric,~,,YAEGO
-2,RC1206FR-1310KL,"R4, R5",10K,Device:R_Small,Resistor_SMD:R_1206_3216Metric,~,,YAEGO
-1,691322310002,Railsync1,WR-TBL 2P,Motor Shield Adapter-rescue:Conn_01x02_Female-Connector,Terminal_Wuerth_new:WR-TBL 2P,,,Wuerth
-1,AP63205WU-7 ,U1,AP63205WU,Regulator_Switching:AP63205WU,Package_TO_SOT_SMD:TSOT-23-6,https://www.mouser.com/datasheet/2/115/DIOD_S_A0007089856_1-2542907.pdf,,Diodes Incorporated
-1,TLP2770TPE ,U2,TLP2770,:TLP2770_1,Package_SO:SO-6L_10x3.84mm_P1.27mm,https://toshiba.semicon-storage.com/info/docget.jsp?did=53548&prodName=TLP2770,,Toshiba
-1,TLP2770TPE ,U3,TLP2770,Isolator:TLP2770,Package_SO:SO-6L_10x3.84mm_P1.27mm,https://toshiba.semicon-storage.com/info/docget.jsp?did=53548&prodName=TLP2770,,Toshiba
-1,SN74LVC1G86DBVR,U4,74LVC1G86,:74AHCT1G86-74xGxx_2,Package_TO_SOT_SMD:SOT-23-5_HandSoldering,https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86,,Texas Insturments
-1,SN74LVC1G86DBVR,U5,74LVC1G86,:74AHCT1G86-74xGxx_1,Package_TO_SOT_SMD:SOT-23-5_HandSoldering,https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86,,Texas Insturments
-4,SN74LVC1G86DBVR,"U6, U7, U8, U9",74LVC1G86,Motor Shield Adapter-rescue:74AHCT1G86-74xGxx,Package_TO_SOT_SMD:SOT-23-5_HandSoldering,https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86,,Texas Insturments
-1,ESP32-S3-WROOM-1U-N16 ,U10,ESP32-S3-WROOM-1,Espressif:ESP32-S3-WROOM-1,RF_Module:ESP32-S3-WROOM-1U,https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf,,Expressif
-1,NCP1117ST33T3G,U11,NCP1117-3.3_SOT223,Regulator_Linear:NCP1117-3.3_SOT223,Package_TO_SOT_SMD:SOT-223-3_TabPin2,http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF,,ONSemi
-2,TXS0102DCTT,"U13, U14",TXS0102DCT,Logic_LevelTranslator:TXS0102DCT,Package_SO:SSOP-8_2.95x2.8mm_P0.65mm,http://www.ti.com/lit/gpn/txs0102,,Texas Insturments
-1,485-85 ,UNO_SHIELD1,Arduino_UNO_R3,MCU_Module:Arduino_UNO_R3,Module:Arduino_UNO_R3_WithMountingHoles,https://www.arduino.cc/en/Main/arduinoBoardUno,,Adafruit
+"Source:","S:\Projects\Dynamo\Hardware\Dynamo\Dynamo.kicad_sch"
+"Date:","12/30/2023 8:16:00 PM"
+"Tool:","Eeschema 7.0.6"
+"Generator:","C:\Program Files\KiCad\7.0\bin\scripting\plugins/bom_csv_grouped_by_value.py"
+"Component Count:","50"
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","DNP","JLCPCB Part #","MFG","PN"
+"1","2","BOOT1, RESET1","B3U-3000P","Switch:SW_Push","Button_Switch_SMD:SW_SPST_B3U-3000P-B","https://www.mouser.com/datasheet/2/307/en-b3u-3615.pdf","","C963349","Omron","B3U-3000P"
+"2","1","C1","330pf","Device:C_Small","Capacitor_SMD:C_1206_3216Metric","~","","C2223641","Wurth Electronik","885012208072"
+"3","3","C2, C4, C5","22uF","Motor Shield Adapter-rescue:CP1_Small-Device","Capacitor_SMD:CP_Elec_5x5.3","","","C2164091","Wurth Electronik","865080542006"
+"4","6","C3, C7, CU2, CU10, CU13, CU14","0.1uF","Device:C_Small","Capacitor_SMD:C_1206_3216Metric","~","","C600013","KEMET","C1206C104K5RAC7210"
+"5","1","C6","22uF","Device:C_Polarized_Small_US","Capacitor_SMD:CP_Elec_5x5.3","~","","C2164091","Wurth Electronik","865080542006"
+"6","1","D1","LED","Device:LED","LED_SMD:LED_1206_3216Metric","https://www.mouser.com/datasheet/2/445/156120RS75300-1715573.pdf","","C7164018","Wurth Elektronik ","156120RS75300"
+"7","4","D2, D3, D4, D5","3.3v","Device:D_Zener_Small","Diode_SMD:D_SOD-123","~","","C151564","Diodes Incorporated","BZT52C3V3-7-F"
+"8","1","D6","PMEG2005EGWX","Device:D_Schottky_Small","Diode_SMD:D_SOD-123","~","","C552812","Nexperia","PMEG2005EGWX"
+"9","1","JUSB1","USB_B_Micro","Connector:USB_B_Micro","Connector_USB:USB_Micro-B_Molex-105017-0001","~","","C136000","Molex","105017-0001 "
+"10","1","L1","4.7uH","Motor Shield Adapter-rescue:INDUCTOR-pspice","Inductor_SMD_Wurth:L_Wurth_WE-LQSH-4020","https://www.mouser.com/datasheet/2/281/JELF243A-0147-1699525.pdf","","","Wuerth Electronik","74405042047"
+"11","1","R1","3k","Device:R","Resistor_SMD:R_1206_3216Metric","~","","C132648","YAEGO","RC1206FR-073KL"
+"12","5","R2, R6, R7, R8, R9","1k","Device:R_Small","Resistor_SMD:R_1206_3216Metric","~","","C131398","YAEGO","RC1206FR-071KL"
+"13","2","R3, R10","10k","Device:R_Small","Resistor_SMD:R_1206_3216Metric","~","","C4303232","YAEGO","RC1206FR-1310KL"
+"14","2","R4, R5","10K","Device:R_Small","Resistor_SMD:R_1206_3216Metric","~","","C4303232","YAEGO","RC1206FR-1310KL"
+"15","1","Railsync1","WR-TBL 2P","Motor Shield Adapter-rescue:Conn_01x02_Female-Connector","Terminal_Wuerth_new:WR-TBL 2P","","","C5140626","Wuerth","691322310002 "
+"16","1","U1","AP63205WU","Regulator_Switching:AP63205WU","Package_TO_SOT_SMD:TSOT-23-6","https://www.mouser.com/datasheet/2/115/DIOD_S_A0007089856_1-2542907.pdf","","C2071056","Diodes Incorporated","AP63205WU-7 "
+"17","1","U2","TLP2770",":TLP2770_1","Package_SO:SO-6L_10x3.84mm_P1.27mm","https://toshiba.semicon-storage.com/info/docget.jsp?did=53548&prodName=TLP2770","","C150160","Toshiba","TLP2770TPE "
+"18","1","U3","TLP2770","Isolator:TLP2770","Package_SO:SO-6L_10x3.84mm_P1.27mm","https://toshiba.semicon-storage.com/info/docget.jsp?did=53548&prodName=TLP2770","","C150160","Toshiba","TLP2770TPE "
+"19","1","U4","74LVC1G86",":74AHCT1G86-74xGxx_2","Package_TO_SOT_SMD:SOT-23-5_HandSoldering","https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86","","C402161","Texas Insturments","SN74LVC1G86DBVR"
+"20","1","U5","74LVC1G86",":74AHCT1G86-74xGxx_1","Package_TO_SOT_SMD:SOT-23-5_HandSoldering","https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86","","C402161","Texas Insturments","SN74LVC1G86DBVR"
+"21","4","U6, U7, U8, U9","74LVC1G86","Motor Shield Adapter-rescue:74AHCT1G86-74xGxx","Package_TO_SOT_SMD:SOT-23-5_HandSoldering","https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86","","C402161","Texas Insturments","SN74LVC1G86DBVR"
+"22","1","U10","ESP32-S3-WROOM-1","Espressif:ESP32-S3-WROOM-1","Espressif:ESP32-S3-WROOM-1","https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf","","C2980298","Expressif","ESP32-S3-WROOM-1U-N16 "
+"23","1","U11","NCP1117-3.3_SOT223","Regulator_Linear:NCP1117-3.3_SOT223","Package_TO_SOT_SMD:SOT-223-3_TabPin2","http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF","","C91728","ONSemi","NCP1117ST33T3G"
+"24","4","U12, U15, U16, U17","74AHC1G32","Loconet DCC Interface-rescue:74AHC1G32-74xGxx","Package_TO_SOT_SMD:SOT-23-5_HandSoldering","","","C10096","","SN74LVC1G32DBVR"
+"25","2","U13, U14","TXS0102DCT","Logic_LevelTranslator:TXS0102DCT","Package_SO:SSOP-8_2.95x2.8mm_P0.65mm","http://www.ti.com/lit/gpn/txs0102","","C2677354","Texas Insturments","TXS0102DCTT"
+"26","1","UNO_SHIELD1","Arduino_UNO_R3","MCU_Module:Arduino_UNO_R3","Module:Arduino_UNO_R3_WithMountingHoles","https://www.arduino.cc/en/Main/arduinoBoardUno","","","",""

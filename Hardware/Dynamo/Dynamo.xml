@@ -2,13 +2,13 @@
 <export version="E">
   <design>
     <source>S:\Projects\Dynamo\Hardware\Dynamo\Dynamo.kicad_sch</source>
-    <date>8/20/2023 9:03:14 PM</date>
+    <date>12/30/2023 8:16:00 PM</date>
     <tool>Eeschema 7.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Dynamo - DCC 4 channel booster</title>
         <company>SeraphimLabs LLC</company>
-        <rev/>
+        <rev>0.4</rev>
         <date/>
         <source>Dynamo.kicad_sch</source>
         <comment number="1" value=""/>
@@ -26,15 +26,17 @@
   <components>
     <comp ref="BOOT1">
       <value>B3U-3000P</value>
-      <footprint>Button_Switch_SMD:SW_SPST_B3U-3000P</footprint>
+      <footprint>Button_Switch_SMD:SW_SPST_B3U-3000P-B</footprint>
       <datasheet>https://www.mouser.com/datasheet/2/307/en-b3u-3615.pdf</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C963349</field>
         <field name="MFG">Omron</field>
         <field name="PN">B3U-3000P</field>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MFG" value="Omron"/>
       <property name="PN" value="B3U-3000P"/>
+      <property name="JLCPCB Part #" value="C963349"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Push button switch, generic, two pins"/>
@@ -46,12 +48,14 @@
       <value>330pf</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C2223641</field>
         <field name="MFG">Wurth Electronik</field>
         <field name="PN">885012208072</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="MFG" value="Wurth Electronik"/>
       <property name="PN" value="885012208072"/>
+      <property name="JLCPCB Part #" value="C2223641"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
@@ -63,12 +67,14 @@
       <value>22uF</value>
       <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
       <fields>
+        <field name="JLCPCB Part #">C2164091</field>
         <field name="MFG">Wurth Electronik</field>
         <field name="PN">865080542006</field>
       </fields>
       <libsource lib="Motor Shield Adapter-rescue" part="CP1_Small-Device" description=""/>
       <property name="MFG" value="Wurth Electronik"/>
       <property name="PN" value="865080542006"/>
+      <property name="JLCPCB Part #" value="C2164091"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -78,12 +84,14 @@
       <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C600013</field>
         <field name="MFG">KEMET</field>
         <field name="PN">C1206C104K5RAC7210</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="MFG" value="KEMET"/>
       <property name="PN" value="C1206C104K5RAC7210"/>
+      <property name="JLCPCB Part #" value="C600013"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
@@ -95,12 +103,14 @@
       <value>22uF</value>
       <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
       <fields>
+        <field name="JLCPCB Part #">C2164091</field>
         <field name="MFG">Wurth Electronik</field>
         <field name="PN">865080542006</field>
       </fields>
       <libsource lib="Motor Shield Adapter-rescue" part="CP1_Small-Device" description=""/>
       <property name="MFG" value="Wurth Electronik"/>
       <property name="PN" value="865080542006"/>
+      <property name="JLCPCB Part #" value="C2164091"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -110,12 +120,14 @@
       <value>22uF</value>
       <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
       <fields>
+        <field name="JLCPCB Part #">C2164091</field>
         <field name="MFG">Wurth Electronik</field>
         <field name="PN">865080542006</field>
       </fields>
       <libsource lib="Motor Shield Adapter-rescue" part="CP1_Small-Device" description=""/>
       <property name="MFG" value="Wurth Electronik"/>
       <property name="PN" value="865080542006"/>
+      <property name="JLCPCB Part #" value="C2164091"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -125,12 +137,14 @@
       <value>22uF</value>
       <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
       <fields>
+        <field name="JLCPCB Part #">C2164091</field>
         <field name="MFG">Wurth Electronik</field>
         <field name="PN">865080542006</field>
       </fields>
       <libsource lib="Device" part="C_Polarized_Small_US" description="Polarized capacitor, small US symbol"/>
       <property name="MFG" value="Wurth Electronik"/>
       <property name="PN" value="865080542006"/>
+      <property name="JLCPCB Part #" value="C2164091"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Polarized capacitor, small US symbol"/>
@@ -142,12 +156,14 @@
       <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C600013</field>
         <field name="MFG">KEMET</field>
         <field name="PN">C1206C104K5RAC7210</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="MFG" value="KEMET"/>
       <property name="PN" value="C1206C104K5RAC7210"/>
+      <property name="JLCPCB Part #" value="C600013"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
@@ -159,12 +175,14 @@
       <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C600013</field>
         <field name="MFG">KEMET</field>
         <field name="PN">C1206C104K5RAC7210</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="MFG" value="KEMET"/>
       <property name="PN" value="C1206C104K5RAC7210"/>
+      <property name="JLCPCB Part #" value="C600013"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
@@ -172,33 +190,18 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000064be1b7a</tstamps>
     </comp>
-    <comp ref="CU3">
-      <value>0.1uF</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
-      <fields>
-        <field name="MFG">KEMET</field>
-        <field name="PN">C1206C104K5RAC7210</field>
-      </fields>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <property name="MFG" value="KEMET"/>
-      <property name="PN" value="C1206C104K5RAC7210"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="Dynamo.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
-      <property name="ki_keywords" value="capacitor cap"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>00000000-0000-0000-0000-000064bf4001</tstamps>
-    </comp>
     <comp ref="CU10">
       <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C600013</field>
         <field name="MFG">KEMET</field>
         <field name="PN">C1206C104K5RAC7210</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="MFG" value="KEMET"/>
       <property name="PN" value="C1206C104K5RAC7210"/>
+      <property name="JLCPCB Part #" value="C600013"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
@@ -210,12 +213,14 @@
       <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C600013</field>
         <field name="MFG">KEMET</field>
         <field name="PN">C1206C104K5RAC7210</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="MFG" value="KEMET"/>
       <property name="PN" value="C1206C104K5RAC7210"/>
+      <property name="JLCPCB Part #" value="C600013"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
@@ -227,12 +232,14 @@
       <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C600013</field>
         <field name="MFG">KEMET</field>
         <field name="PN">C1206C104K5RAC7210</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="MFG" value="KEMET"/>
       <property name="PN" value="C1206C104K5RAC7210"/>
+      <property name="JLCPCB Part #" value="C600013"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
@@ -245,12 +252,14 @@
       <footprint>LED_SMD:LED_1206_3216Metric</footprint>
       <datasheet>https://www.mouser.com/datasheet/2/445/156120RS75300-1715573.pdf</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C7164018</field>
         <field name="MFG">Wurth Elektronik </field>
         <field name="PN">156120RS75300</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="PN" value="156120RS75300"/>
       <property name="MFG" value="Wurth Elektronik "/>
+      <property name="JLCPCB Part #" value="C7164018"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Light emitting diode"/>
@@ -262,12 +271,14 @@
       <value>3.3v</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <fields>
+        <field name="JLCPCB Part #">C151564</field>
         <field name="MFG">Diodes Incorporated</field>
         <field name="PN">BZT52C3V3-7-F</field>
       </fields>
       <libsource lib="Device" part="D_Zener_Small" description="Zener diode, small symbol"/>
       <property name="MFG" value="Diodes Incorporated"/>
       <property name="PN" value="BZT52C3V3-7-F"/>
+      <property name="JLCPCB Part #" value="C151564"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Zener diode, small symbol"/>
@@ -279,12 +290,14 @@
       <value>3.3v</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <fields>
+        <field name="JLCPCB Part #">C151564</field>
         <field name="MFG">Diodes Incorporated</field>
         <field name="PN">BZT52C3V3-7-F</field>
       </fields>
       <libsource lib="Device" part="D_Zener_Small" description="Zener diode, small symbol"/>
       <property name="MFG" value="Diodes Incorporated"/>
       <property name="PN" value="BZT52C3V3-7-F"/>
+      <property name="JLCPCB Part #" value="C151564"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Zener diode, small symbol"/>
@@ -296,12 +309,14 @@
       <value>3.3v</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <fields>
+        <field name="JLCPCB Part #">C151564</field>
         <field name="MFG">Diodes Incorporated</field>
         <field name="PN">BZT52C3V3-7-F</field>
       </fields>
       <libsource lib="Device" part="D_Zener_Small" description="Zener diode, small symbol"/>
       <property name="MFG" value="Diodes Incorporated"/>
       <property name="PN" value="BZT52C3V3-7-F"/>
+      <property name="JLCPCB Part #" value="C151564"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Zener diode, small symbol"/>
@@ -313,12 +328,14 @@
       <value>3.3v</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <fields>
+        <field name="JLCPCB Part #">C151564</field>
         <field name="MFG">Diodes Incorporated</field>
         <field name="PN">BZT52C3V3-7-F</field>
       </fields>
       <libsource lib="Device" part="D_Zener_Small" description="Zener diode, small symbol"/>
       <property name="MFG" value="Diodes Incorporated"/>
       <property name="PN" value="BZT52C3V3-7-F"/>
+      <property name="JLCPCB Part #" value="C151564"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Zener diode, small symbol"/>
@@ -326,16 +343,37 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>367a9145-bddf-4691-bbfd-9e040bf2aae4</tstamps>
     </comp>
+    <comp ref="D6">
+      <value>PMEG2005EGWX</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C552812</field>
+        <field name="MFG">Nexperia</field>
+        <field name="PN">PMEG2005EGWX</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_Small" description="Schottky diode, small symbol"/>
+      <property name="MFG" value="Nexperia"/>
+      <property name="PN" value="PMEG2005EGWX"/>
+      <property name="JLCPCB Part #" value="C552812"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Dynamo.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode, small symbol"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>61d69b4d-ed33-411f-8a23-3fbb06bb5319</tstamps>
+    </comp>
     <comp ref="JUSB1">
       <value>USB_B_Micro</value>
       <footprint>Connector_USB:USB_Micro-B_Molex-105017-0001</footprint>
       <fields>
+        <field name="JLCPCB Part #">C136000</field>
         <field name="MFG">Molex</field>
         <field name="PN">105017-0001 </field>
       </fields>
       <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
       <property name="MFG" value="Molex"/>
       <property name="PN" value="105017-0001 "/>
+      <property name="JLCPCB Part #" value="C136000"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="USB Micro Type B connector"/>
@@ -354,6 +392,7 @@
       <libsource lib="Motor Shield Adapter-rescue" part="INDUCTOR-pspice" description=""/>
       <property name="MFG" value="Wuerth Electronik"/>
       <property name="PN" value="74405042047"/>
+      <property name="JLCPCB Part #" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -363,12 +402,14 @@
       <value>3k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C132648</field>
         <field name="MFG">YAEGO</field>
         <field name="PN">RC1206FR-073KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="MFG" value="YAEGO"/>
       <property name="PN" value="RC1206FR-073KL"/>
+      <property name="JLCPCB Part #" value="C132648"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
@@ -380,12 +421,14 @@
       <value>1k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C131398</field>
         <field name="MFG">YAEGO</field>
         <field name="PN">RC1206FR-071KL</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <property name="MFG" value="YAEGO"/>
       <property name="PN" value="RC1206FR-071KL"/>
+      <property name="JLCPCB Part #" value="C131398"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -397,12 +440,14 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C4303232</field>
         <field name="MFG">YAEGO</field>
         <field name="PN">RC1206FR-1310KL</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <property name="MFG" value="YAEGO"/>
       <property name="PN" value="RC1206FR-1310KL"/>
+      <property name="JLCPCB Part #" value="C4303232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -414,12 +459,14 @@
       <value>10K</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C4303232</field>
         <field name="MFG">YAEGO</field>
         <field name="PN">RC1206FR-1310KL</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <property name="MFG" value="YAEGO"/>
       <property name="PN" value="RC1206FR-1310KL"/>
+      <property name="JLCPCB Part #" value="C4303232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -431,12 +478,14 @@
       <value>10K</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C4303232</field>
         <field name="MFG">YAEGO</field>
         <field name="PN">RC1206FR-1310KL</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <property name="MFG" value="YAEGO"/>
       <property name="PN" value="RC1206FR-1310KL"/>
+      <property name="JLCPCB Part #" value="C4303232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -448,12 +497,14 @@
       <value>1k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C131398</field>
         <field name="MFG">YAEGO</field>
         <field name="PN">RC1206FR-071KL</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <property name="MFG" value="YAEGO"/>
       <property name="PN" value="RC1206FR-071KL"/>
+      <property name="JLCPCB Part #" value="C131398"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -465,12 +516,14 @@
       <value>1k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C131398</field>
         <field name="MFG">YAEGO</field>
         <field name="PN">RC1206FR-071KL</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <property name="MFG" value="YAEGO"/>
       <property name="PN" value="RC1206FR-071KL"/>
+      <property name="JLCPCB Part #" value="C131398"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -482,12 +535,14 @@
       <value>1k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C131398</field>
         <field name="MFG">YAEGO</field>
         <field name="PN">RC1206FR-071KL</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <property name="MFG" value="YAEGO"/>
       <property name="PN" value="RC1206FR-071KL"/>
+      <property name="JLCPCB Part #" value="C131398"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -499,12 +554,14 @@
       <value>1k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C131398</field>
         <field name="MFG">YAEGO</field>
         <field name="PN">RC1206FR-071KL</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <property name="MFG" value="YAEGO"/>
       <property name="PN" value="RC1206FR-071KL"/>
+      <property name="JLCPCB Part #" value="C131398"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -516,12 +573,14 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
       <fields>
+        <field name="JLCPCB Part #">C4303232</field>
         <field name="MFG">YAEGO</field>
         <field name="PN">RC1206FR-1310KL</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <property name="MFG" value="YAEGO"/>
       <property name="PN" value="RC1206FR-1310KL"/>
+      <property name="JLCPCB Part #" value="C4303232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -533,12 +592,14 @@
       <value>WR-TBL 2P</value>
       <footprint>Terminal_Wuerth_new:WR-TBL 2P</footprint>
       <fields>
+        <field name="JLCPCB Part #">C5140626</field>
         <field name="MFG">Wuerth</field>
         <field name="PN">691322310002 </field>
       </fields>
       <libsource lib="Motor Shield Adapter-rescue" part="Conn_01x02_Female-Connector" description=""/>
       <property name="MFG" value="Wuerth"/>
       <property name="PN" value="691322310002 "/>
+      <property name="JLCPCB Part #" value="C5140626"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -546,14 +607,16 @@
     </comp>
     <comp ref="RESET1">
       <value>B3U-3000P</value>
-      <footprint>Button_Switch_SMD:SW_SPST_B3U-3000P</footprint>
+      <footprint>Button_Switch_SMD:SW_SPST_B3U-3000P-B</footprint>
       <fields>
+        <field name="JLCPCB Part #">C963349</field>
         <field name="MFG">Omron</field>
         <field name="PN">B3U-3000P</field>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MFG" value="Omron"/>
       <property name="PN" value="B3U-3000P"/>
+      <property name="JLCPCB Part #" value="C963349"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Push button switch, generic, two pins"/>
@@ -566,12 +629,14 @@
       <footprint>Package_TO_SOT_SMD:TSOT-23-6</footprint>
       <datasheet>https://www.mouser.com/datasheet/2/115/DIOD_S_A0007089856_1-2542907.pdf</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C2071056</field>
         <field name="MFG">Diodes Incorporated</field>
         <field name="PN">AP63205WU-7 </field>
       </fields>
       <libsource lib="Regulator_Switching" part="AP63205WU" description="2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"/>
       <property name="MFG" value="Diodes Incorporated"/>
       <property name="PN" value="AP63205WU-7 "/>
+      <property name="JLCPCB Part #" value="C2071056"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"/>
@@ -584,12 +649,14 @@
       <footprint>Package_SO:SO-6L_10x3.84mm_P1.27mm</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=53548&amp;prodName=TLP2770</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C150160</field>
         <field name="MFG">Toshiba</field>
         <field name="PN">TLP2770TPE </field>
       </fields>
       <libsource lib="" part="TLP2770_1" description="20-Mbps low-power non inverting photocouple,5 kVrms, 2.7 to 5.5 Vdd, push-pull output, SO-6L"/>
       <property name="MFG" value="Toshiba"/>
       <property name="PN" value="TLP2770TPE "/>
+      <property name="JLCPCB Part #" value="C150160"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="20-Mbps low-power non inverting photocouple,5 kVrms, 2.7 to 5.5 Vdd, push-pull output, SO-6L"/>
@@ -602,12 +669,14 @@
       <footprint>Package_SO:SO-6L_10x3.84mm_P1.27mm</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=53548&amp;prodName=TLP2770</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C150160</field>
         <field name="MFG">Toshiba</field>
         <field name="PN">TLP2770TPE </field>
       </fields>
       <libsource lib="Isolator" part="TLP2770" description="20-Mbps low-power non inverting photocouple,5 kVrms, 2.7 to 5.5 Vdd, push-pull output, SO-6L"/>
       <property name="MFG" value="Toshiba"/>
       <property name="PN" value="TLP2770TPE "/>
+      <property name="JLCPCB Part #" value="C150160"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="20-Mbps low-power non inverting photocouple,5 kVrms, 2.7 to 5.5 Vdd, push-pull output, SO-6L"/>
@@ -620,12 +689,14 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
       <datasheet>https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&amp;gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C402161</field>
         <field name="MFG">Texas Insturments</field>
         <field name="PN">SN74LVC1G86DBVR</field>
       </fields>
       <libsource lib="" part="74AHCT1G86-74xGxx_2" description=""/>
       <property name="MFG" value="Texas Insturments"/>
       <property name="PN" value="SN74LVC1G86DBVR"/>
+      <property name="JLCPCB Part #" value="C402161"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -636,12 +707,14 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
       <datasheet>https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&amp;gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C402161</field>
         <field name="MFG">Texas Insturments</field>
         <field name="PN">SN74LVC1G86DBVR</field>
       </fields>
       <libsource lib="" part="74AHCT1G86-74xGxx_1" description=""/>
       <property name="MFG" value="Texas Insturments"/>
       <property name="PN" value="SN74LVC1G86DBVR"/>
+      <property name="JLCPCB Part #" value="C402161"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -652,12 +725,14 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
       <datasheet>https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&amp;gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C402161</field>
         <field name="MFG">Texas Insturments</field>
         <field name="PN">SN74LVC1G86DBVR</field>
       </fields>
       <libsource lib="Motor Shield Adapter-rescue" part="74AHCT1G86-74xGxx" description=""/>
       <property name="MFG" value="Texas Insturments"/>
       <property name="PN" value="SN74LVC1G86DBVR"/>
+      <property name="JLCPCB Part #" value="C402161"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -668,12 +743,14 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
       <datasheet>https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&amp;gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C402161</field>
         <field name="MFG">Texas Insturments</field>
         <field name="PN">SN74LVC1G86DBVR</field>
       </fields>
       <libsource lib="Motor Shield Adapter-rescue" part="74AHCT1G86-74xGxx" description=""/>
       <property name="MFG" value="Texas Insturments"/>
       <property name="PN" value="SN74LVC1G86DBVR"/>
+      <property name="JLCPCB Part #" value="C402161"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -684,12 +761,14 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
       <datasheet>https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&amp;gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C402161</field>
         <field name="MFG">Texas Insturments</field>
         <field name="PN">SN74LVC1G86DBVR</field>
       </fields>
       <libsource lib="Motor Shield Adapter-rescue" part="74AHCT1G86-74xGxx" description=""/>
       <property name="MFG" value="Texas Insturments"/>
       <property name="PN" value="SN74LVC1G86DBVR"/>
+      <property name="JLCPCB Part #" value="C402161"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -700,12 +779,14 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
       <datasheet>https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&amp;gotoUrl=https://www.ti.com/lit/gpn/sn74lvc1g86</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C402161</field>
         <field name="MFG">Texas Insturments</field>
         <field name="PN">SN74LVC1G86DBVR</field>
       </fields>
       <libsource lib="Motor Shield Adapter-rescue" part="74AHCT1G86-74xGxx" description=""/>
       <property name="MFG" value="Texas Insturments"/>
       <property name="PN" value="SN74LVC1G86DBVR"/>
+      <property name="JLCPCB Part #" value="C402161"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -713,15 +794,17 @@
     </comp>
     <comp ref="U10">
       <value>ESP32-S3-WROOM-1</value>
-      <footprint>RF_Module:ESP32-S3-WROOM-1U</footprint>
+      <footprint>Espressif:ESP32-S3-WROOM-1</footprint>
       <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C2980298</field>
         <field name="MFG">Expressif</field>
         <field name="PN">ESP32-S3-WROOM-1U-N16 </field>
       </fields>
       <libsource lib="Espressif" part="ESP32-S3-WROOM-1" description="2.4 GHz WiFi (802.11 b/g/n) and Bluetooth ® 5 (LE) module Built around ESP32S3 series of SoCs, Xtensa ® dualcore 32bit LX7 microprocessor Flash up to 16 MB, PSRAM up to 8 MB 36 GPIOs, rich set of peripherals Onboard PCB antenna"/>
       <property name="MFG" value="Expressif"/>
       <property name="PN" value="ESP32-S3-WROOM-1U-N16 "/>
+      <property name="JLCPCB Part #" value="C2980298"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="2.4 GHz WiFi (802.11 b/g/n) and Bluetooth ® 5 (LE) module Built around ESP32S3 series of SoCs, Xtensa ® dualcore 32bit LX7 microprocessor Flash up to 16 MB, PSRAM up to 8 MB 36 GPIOs, rich set of peripherals Onboard PCB antenna"/>
@@ -733,12 +816,14 @@
       <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
       <datasheet>http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C91728</field>
         <field name="MFG">ONSemi</field>
         <field name="PN">NCP1117ST33T3G</field>
       </fields>
       <libsource lib="Regulator_Linear" part="NCP1117-3.3_SOT223" description="1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"/>
       <property name="MFG" value="ONSemi"/>
       <property name="PN" value="NCP1117ST33T3G"/>
+      <property name="JLCPCB Part #" value="C91728"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"/>
@@ -746,17 +831,34 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d5c478ca-06f9-46f7-b41c-ccba23df23e2</tstamps>
     </comp>
+    <comp ref="U12">
+      <value>74AHC1G32</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C10096</field>
+        <field name="PN">SN74LVC1G32DBVR</field>
+      </fields>
+      <libsource lib="Loconet DCC Interface-rescue" part="74AHC1G32-74xGxx" description=""/>
+      <property name="PN" value="SN74LVC1G32DBVR"/>
+      <property name="JLCPCB Part #" value="C10096"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Dynamo.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>44712713-0f53-456a-9bf7-d211d058220c</tstamps>
+    </comp>
     <comp ref="U13">
       <value>TXS0102DCT</value>
       <footprint>Package_SO:SSOP-8_2.95x2.8mm_P0.65mm</footprint>
       <datasheet>http://www.ti.com/lit/gpn/txs0102</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C2677354</field>
         <field name="MFG">Texas Insturments</field>
         <field name="PN">TXS0102DCTT</field>
       </fields>
       <libsource lib="Logic_LevelTranslator" part="TXS0102DCT" description="2-Bit Bidirectional Voltage-Level Shifter for Open-Drain and Push-Pull Application, SSOP-8"/>
       <property name="MFG" value="Texas Insturments"/>
       <property name="PN" value="TXS0102DCTT"/>
+      <property name="JLCPCB Part #" value="C2677354"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="2-Bit Bidirectional Voltage-Level Shifter for Open-Drain and Push-Pull Application, SSOP-8"/>
@@ -769,12 +871,14 @@
       <footprint>Package_SO:SSOP-8_2.95x2.8mm_P0.65mm</footprint>
       <datasheet>http://www.ti.com/lit/gpn/txs0102</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C2677354</field>
         <field name="MFG">Texas Insturments</field>
         <field name="PN">TXS0102DCTT</field>
       </fields>
       <libsource lib="Logic_LevelTranslator" part="TXS0102DCT" description="2-Bit Bidirectional Voltage-Level Shifter for Open-Drain and Push-Pull Application, SSOP-8"/>
       <property name="MFG" value="Texas Insturments"/>
       <property name="PN" value="TXS0102DCTT"/>
+      <property name="JLCPCB Part #" value="C2677354"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="2-Bit Bidirectional Voltage-Level Shifter for Open-Drain and Push-Pull Application, SSOP-8"/>
@@ -782,11 +886,57 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>109c6914-cfa3-4ea0-bac3-198e2e0fd01d</tstamps>
     </comp>
+    <comp ref="U15">
+      <value>74AHC1G32</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C10096</field>
+        <field name="PN">SN74LVC1G32DBVR</field>
+      </fields>
+      <libsource lib="Loconet DCC Interface-rescue" part="74AHC1G32-74xGxx" description=""/>
+      <property name="PN" value="SN74LVC1G32DBVR"/>
+      <property name="JLCPCB Part #" value="C10096"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Dynamo.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>904218de-7035-4bc1-928c-fac3a44cf2be</tstamps>
+    </comp>
+    <comp ref="U16">
+      <value>74AHC1G32</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C10096</field>
+        <field name="PN">SN74LVC1G32DBVR</field>
+      </fields>
+      <libsource lib="Loconet DCC Interface-rescue" part="74AHC1G32-74xGxx" description=""/>
+      <property name="PN" value="SN74LVC1G32DBVR"/>
+      <property name="JLCPCB Part #" value="C10096"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Dynamo.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c95839e7-ce84-4058-b536-734f6d513ceb</tstamps>
+    </comp>
+    <comp ref="U17">
+      <value>74AHC1G32</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C10096</field>
+        <field name="PN">SN74LVC1G32DBVR</field>
+      </fields>
+      <libsource lib="Loconet DCC Interface-rescue" part="74AHC1G32-74xGxx" description=""/>
+      <property name="PN" value="SN74LVC1G32DBVR"/>
+      <property name="JLCPCB Part #" value="C10096"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Dynamo.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0234ac82-fb82-47b8-b834-36548a52aaaf</tstamps>
+    </comp>
     <comp ref="UNO_SHIELD1">
       <value>Arduino_UNO_R3</value>
       <footprint>Module:Arduino_UNO_R3_WithMountingHoles</footprint>
       <datasheet>https://www.arduino.cc/en/Main/arduinoBoardUno</datasheet>
       <libsource lib="MCU_Module" part="Arduino_UNO_R3" description="Arduino UNO Microcontroller Module, release 3"/>
+      <property name="JLCPCB Part #" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Arduino UNO Microcontroller Module, release 3"/>
@@ -907,6 +1057,25 @@
       <pins>
         <pin num="1" name="" type="passive"/>
         <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky_Small">
+      <description>Schottky diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="D_Zener_Small">
@@ -1050,6 +1219,23 @@
         <pin num="4" name="GND" type="power_in"/>
         <pin num="5" name="VO" type="output"/>
         <pin num="6" name="" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Loconet DCC Interface-rescue" part="74AHC1G32-74xGxx">
+      <footprints>
+        <fp>SOT*</fp>
+        <fp>SG-*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74xGxx_74AHC1G32</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="Logic_LevelTranslator" part="TXS0102DCT">
@@ -1238,6 +1424,9 @@
     <library logical="Isolator">
       <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Isolator.kicad_sym</uri>
     </library>
+    <library logical="Loconet DCC Interface-rescue">
+      <uri>C:/Users/Sean/Documents/Projects/Loconet DCC Interface/Loconet DCC Interface-rescue.kicad_sym</uri>
+    </library>
     <library logical="Logic_LevelTranslator">
       <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Logic_LevelTranslator.kicad_sym</uri>
     </library>
@@ -1259,7 +1448,6 @@
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="CU10" pin="1" pintype="passive"/>
       <node ref="CU2" pin="1" pintype="passive"/>
-      <node ref="CU3" pin="1" pintype="passive"/>
       <node ref="R10" pin="2" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="R4" pin="1" pintype="passive"/>
@@ -1281,11 +1469,16 @@
       <node ref="CU13" pin="1" pintype="passive"/>
       <node ref="CU14" pin="1" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="L1" pin="2" pinfunction="2" pintype="input"/>
       <node ref="U1" pin="1" pinfunction="FB" pintype="input"/>
       <node ref="U11" pin="3" pinfunction="VI" pintype="power_in"/>
+      <node ref="U12" pin="5" pinfunction="VCC" pintype="power_in"/>
       <node ref="U13" pin="7" pinfunction="VCCB" pintype="power_in"/>
       <node ref="U14" pin="7" pinfunction="VCCB" pintype="power_in"/>
+      <node ref="U15" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U16" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U17" pin="5" pinfunction="VCC" pintype="power_in"/>
       <node ref="U6" pin="5" pinfunction="VCC" pintype="power_in"/>
       <node ref="U7" pin="5" pinfunction="VCC" pintype="power_in"/>
       <node ref="U8" pin="5" pinfunction="VCC" pintype="power_in"/>
@@ -1338,7 +1531,7 @@
       <node ref="UNO_SHIELD1" pin="30" pinfunction="AREF" pintype="input"/>
     </net>
     <net code="14" name="/BOOT">
-      <node ref="BOOT1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="BOOT1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="U10" pin="27" pinfunction="GPIO0/BOOT" pintype="bidirectional"/>
     </net>
@@ -1358,118 +1551,134 @@
       <node ref="U10" pin="25" pinfunction="GPIO48/SPICLK_N/SUBSPICLK_N_DIFF" pintype="bidirectional"/>
       <node ref="UNO_SHIELD1" pin="21" pinfunction="D6" pintype="bidirectional"/>
     </net>
-    <net code="19" name="/DIR">
-      <node ref="U4" pin="4" pintype="output"/>
-      <node ref="U6" pin="1" pintype="input"/>
-      <node ref="U7" pin="1" pintype="input"/>
-      <node ref="U8" pin="1" pintype="input"/>
-      <node ref="U9" pin="1" pintype="input"/>
+    <net code="19" name="/DC_1">
+      <node ref="U10" pin="32" pinfunction="MTCK/GPIO39/CLK_OUT3/SUBSPICS1" pintype="bidirectional"/>
+      <node ref="U12" pin="2" pintype="input"/>
     </net>
-    <net code="20" name="/DIR1">
+    <net code="20" name="/DC_2">
+      <node ref="U10" pin="33" pinfunction="MTDO/GPIO40/CLK_OUT2" pintype="bidirectional"/>
+      <node ref="U15" pin="2" pintype="input"/>
+    </net>
+    <net code="21" name="/DC_3">
+      <node ref="U10" pin="34" pinfunction="MTDI/GPIO41/CLK_OUT1" pintype="bidirectional"/>
+      <node ref="U16" pin="2" pintype="input"/>
+    </net>
+    <net code="22" name="/DC_4">
+      <node ref="U10" pin="35" pinfunction="MTMS/GPIO42" pintype="bidirectional"/>
+      <node ref="U17" pin="2" pintype="input"/>
+    </net>
+    <net code="23" name="/DIR">
+      <node ref="U12" pin="1" pintype="input"/>
+      <node ref="U15" pin="1" pintype="input"/>
+      <node ref="U16" pin="1" pintype="input"/>
+      <node ref="U17" pin="1" pintype="input"/>
+      <node ref="U4" pin="4" pintype="output"/>
+    </net>
+    <net code="24" name="/DIR1">
       <node ref="U6" pin="4" pintype="output"/>
       <node ref="UNO_SHIELD1" pin="27" pinfunction="D12" pintype="bidirectional"/>
     </net>
-    <net code="21" name="/DIR2">
+    <net code="25" name="/DIR2">
       <node ref="U7" pin="4" pintype="output"/>
       <node ref="UNO_SHIELD1" pin="28" pinfunction="D13" pintype="bidirectional"/>
     </net>
-    <net code="22" name="/DIR3">
+    <net code="26" name="/DIR3">
       <node ref="U8" pin="4" pintype="output"/>
       <node ref="UNO_SHIELD1" pin="25" pinfunction="D10" pintype="bidirectional"/>
     </net>
-    <net code="23" name="/DIR4">
+    <net code="27" name="/DIR4">
       <node ref="U9" pin="4" pintype="output"/>
       <node ref="UNO_SHIELD1" pin="19" pinfunction="D4" pintype="bidirectional"/>
     </net>
-    <net code="24" name="/DIR_MONITOR">
+    <net code="28" name="/DIR_MONITOR">
       <node ref="U10" pin="31" pinfunction="GPIO38/FSPIWP/SUBSPIWP" pintype="bidirectional"/>
       <node ref="U2" pin="5" pinfunction="VO" pintype="output"/>
       <node ref="U4" pin="2" pintype="input"/>
       <node ref="U5" pin="1" pintype="input"/>
     </net>
-    <net code="25" name="/DIR_OVERRIDE">
+    <net code="29" name="/DIR_OVERRIDE">
       <node ref="U10" pin="23" pinfunction="GPIO21" pintype="bidirectional"/>
       <node ref="U4" pin="1" pintype="input"/>
     </net>
-    <net code="26" name="/ENA_1">
+    <net code="30" name="/ENA_1">
       <node ref="U10" pin="17" pinfunction="GPIO9/TOUCH9/ADC1_CH8/FSPIHD/SUBSPIHD" pintype="bidirectional"/>
       <node ref="UNO_SHIELD1" pin="18" pinfunction="D3" pintype="bidirectional"/>
     </net>
-    <net code="27" name="/ENA_2">
+    <net code="31" name="/ENA_2">
       <node ref="U10" pin="18" pinfunction="GPIO10/TOUCH10/ADC1_CH9/FSPICS0/FSPIIO4/SUBSPICS0" pintype="bidirectional"/>
       <node ref="UNO_SHIELD1" pin="26" pinfunction="D11" pintype="bidirectional"/>
     </net>
-    <net code="28" name="/ENA_3">
+    <net code="32" name="/ENA_3">
       <node ref="U10" pin="19" pinfunction="GPIO11/TOUCH11/ADC2_CH0/FSPID/FSPIIO5/SUBSPID" pintype="bidirectional"/>
       <node ref="UNO_SHIELD1" pin="17" pinfunction="D2" pintype="bidirectional"/>
     </net>
-    <net code="29" name="/ENA_4">
+    <net code="33" name="/ENA_4">
       <node ref="U10" pin="20" pinfunction="GPIO12/TOUCH12/ADC2_CH1/FSPICLK/FSPIIO6/SUBSPICLK" pintype="bidirectional"/>
       <node ref="UNO_SHIELD1" pin="20" pinfunction="D5" pintype="bidirectional"/>
     </net>
-    <net code="30" name="/MASTER_EN">
+    <net code="34" name="/MASTER_EN">
       <node ref="U10" pin="8" pinfunction="GPIO15/U0RTS/ADC2_CH4/XTAL_32K_P" pintype="bidirectional"/>
       <node ref="U5" pin="4" pintype="output"/>
     </net>
-    <net code="31" name="/RAILSYNC_A">
+    <net code="35" name="/RAILSYNC_A">
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="Railsync1" pin="1" pinfunction="Pin_1" pintype="passive"/>
     </net>
-    <net code="32" name="/RAILSYNC_B">
+    <net code="36" name="/RAILSYNC_B">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="Railsync1" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U2" pin="1" pinfunction="A" pintype="passive"/>
       <node ref="U3" pin="3" pinfunction="K" pintype="passive"/>
     </net>
-    <net code="33" name="/RESET">
+    <net code="37" name="/RESET">
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="R4" pin="2" pintype="passive"/>
       <node ref="RESET1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="U10" pin="3" pinfunction="EN" pintype="input"/>
       <node ref="UNO_SHIELD1" pin="3" pinfunction="~{RESET}" pintype="input"/>
     </net>
-    <net code="34" name="/REV1">
+    <net code="38" name="/REV1">
       <node ref="U10" pin="5" pinfunction="GPIO5/TOUCH5/ADC1_CH4" pintype="bidirectional"/>
       <node ref="U6" pin="2" pintype="input"/>
     </net>
-    <net code="35" name="/REV2">
+    <net code="39" name="/REV2">
       <node ref="U10" pin="6" pinfunction="GPIO6/TOUCH6/ADC1_CH5" pintype="bidirectional"/>
       <node ref="U7" pin="2" pintype="input"/>
     </net>
-    <net code="36" name="/REV3">
+    <net code="40" name="/REV3">
       <node ref="U10" pin="7" pinfunction="GPIO7/TOUCH7/ADC1_CH6" pintype="bidirectional"/>
       <node ref="U8" pin="2" pintype="input"/>
     </net>
-    <net code="37" name="/REV4">
+    <net code="41" name="/REV4">
       <node ref="U10" pin="12" pinfunction="GPIO8/TOUCH8/ADC1_CH7/SUBSPICS1" pintype="bidirectional"/>
       <node ref="U9" pin="2" pintype="input"/>
     </net>
-    <net code="38" name="/RXD">
+    <net code="42" name="/RXD">
       <node ref="U13" pin="1" pinfunction="B2" pintype="bidirectional"/>
       <node ref="UNO_SHIELD1" pin="15" pinfunction="D0/RX" pintype="bidirectional"/>
     </net>
-    <net code="39" name="/SCL">
+    <net code="43" name="/SCL">
       <node ref="U10" pin="11" pinfunction="GPIO18/U1RXD/ADC2_CH7/CLK_OUT3" pintype="bidirectional"/>
       <node ref="U14" pin="4" pinfunction="A2" pintype="bidirectional"/>
     </net>
-    <net code="40" name="/SDA">
+    <net code="44" name="/SDA">
       <node ref="U10" pin="10" pinfunction="GPIO17/U1TXD/ADC2_CH6" pintype="bidirectional"/>
       <node ref="U14" pin="5" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="41" name="/TXD">
+    <net code="45" name="/TXD">
       <node ref="U13" pin="8" pinfunction="B1" pintype="bidirectional"/>
       <node ref="UNO_SHIELD1" pin="16" pinfunction="D1/TX" pintype="bidirectional"/>
     </net>
-    <net code="42" name="/USB_D+">
+    <net code="46" name="/USB_D+">
       <node ref="JUSB1" pin="3" pinfunction="D+" pintype="bidirectional"/>
       <node ref="U10" pin="14" pinfunction="GPIO20/U1CTS/ADC2_CH9/CLK_OUT1/USB_D+" pintype="bidirectional"/>
     </net>
-    <net code="43" name="/USB_D-">
+    <net code="47" name="/USB_D-">
       <node ref="JUSB1" pin="2" pinfunction="D-" pintype="bidirectional"/>
       <node ref="U10" pin="13" pinfunction="GPIO19/U1RTS/ADC2_CH8/CLK_OUT2/USB_D-" pintype="bidirectional"/>
     </net>
-    <net code="44" name="GND">
-      <node ref="BOOT1" pin="1" pinfunction="1" pintype="passive"/>
+    <net code="48" name="GND">
+      <node ref="BOOT1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
@@ -1479,7 +1688,6 @@
       <node ref="CU13" pin="2" pintype="passive"/>
       <node ref="CU14" pin="2" pintype="passive"/>
       <node ref="CU2" pin="2" pintype="passive"/>
-      <node ref="CU3" pin="2" pintype="passive"/>
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
@@ -1493,8 +1701,12 @@
       <node ref="U10" pin="40" pinfunction="GND" pintype="passive"/>
       <node ref="U10" pin="41" pinfunction="GND" pintype="passive"/>
       <node ref="U11" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U12" pin="3" pinfunction="GND" pintype="power_in"/>
       <node ref="U13" pin="2" pinfunction="GND" pintype="power_in"/>
       <node ref="U14" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U15" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U16" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U17" pin="3" pinfunction="GND" pintype="power_in"/>
       <node ref="U2" pin="4" pinfunction="GND" pintype="power_in"/>
       <node ref="U3" pin="4" pinfunction="GND" pintype="power_in"/>
       <node ref="U4" pin="3" pintype="power_in"/>
@@ -1507,102 +1719,107 @@
       <node ref="UNO_SHIELD1" pin="6" pinfunction="GND" pintype="power_in"/>
       <node ref="UNO_SHIELD1" pin="7" pinfunction="GND" pintype="power_in"/>
     </net>
-    <net code="45" name="Net-(D1-K)">
+    <net code="49" name="Net-(D1-K)">
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
     </net>
-    <net code="46" name="Net-(U1-BST)">
+    <net code="50" name="Net-(D6-A)">
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="JUSB1" pin="1" pinfunction="VBUS" pintype="power_out"/>
+    </net>
+    <net code="51" name="Net-(U1-BST)">
       <node ref="C3" pin="1" pintype="passive"/>
       <node ref="U1" pin="6" pinfunction="BST" pintype="passive"/>
     </net>
-    <net code="47" name="Net-(U1-SW)">
+    <net code="52" name="Net-(U1-SW)">
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="L1" pin="1" pinfunction="1" pintype="input"/>
       <node ref="U1" pin="5" pinfunction="SW" pintype="output"/>
     </net>
-    <net code="48" name="Net-(U2-K)">
+    <net code="53" name="Net-(U2-K)">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="K" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="A" pintype="passive"/>
     </net>
-    <net code="49" name="Net-(U3-VO)">
+    <net code="54" name="Net-(U3-VO)">
       <node ref="U3" pin="5" pinfunction="VO" pintype="output"/>
       <node ref="U5" pin="2" pintype="input"/>
     </net>
-    <net code="50" name="Net-(U10-U0RXD{slash}GPIO44{slash}CLK_OUT2)">
+    <net code="55" name="Net-(U10-U0RXD{slash}GPIO44{slash}CLK_OUT2)">
       <node ref="U10" pin="36" pinfunction="U0RXD/GPIO44/CLK_OUT2" pintype="bidirectional"/>
       <node ref="U13" pin="4" pinfunction="A2" pintype="bidirectional"/>
     </net>
-    <net code="51" name="Net-(U10-U0TXD{slash}GPIO43{slash}CLK_OUT1)">
+    <net code="56" name="Net-(U10-U0TXD{slash}GPIO43{slash}CLK_OUT1)">
       <node ref="U10" pin="37" pinfunction="U0TXD/GPIO43/CLK_OUT1" pintype="bidirectional"/>
       <node ref="U13" pin="5" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="52" name="Net-(U13-OE)">
+    <net code="57" name="Net-(U12-Pad4)">
+      <node ref="U12" pin="4" pintype="output"/>
+      <node ref="U6" pin="1" pintype="input"/>
+    </net>
+    <net code="58" name="Net-(U13-OE)">
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U13" pin="6" pinfunction="OE" pintype="input"/>
     </net>
-    <net code="53" name="Net-(U14-B1)">
+    <net code="59" name="Net-(U14-B1)">
       <node ref="U14" pin="8" pinfunction="B1" pintype="bidirectional"/>
       <node ref="UNO_SHIELD1" pin="31" pinfunction="SDA/A4" pintype="bidirectional"/>
     </net>
-    <net code="54" name="Net-(U14-B2)">
+    <net code="60" name="Net-(U14-B2)">
       <node ref="U14" pin="1" pinfunction="B2" pintype="bidirectional"/>
       <node ref="UNO_SHIELD1" pin="32" pinfunction="SCL/A5" pintype="bidirectional"/>
     </net>
-    <net code="55" name="Net-(U14-OE)">
+    <net code="61" name="Net-(U14-OE)">
       <node ref="R10" pin="1" pintype="passive"/>
       <node ref="U14" pin="6" pinfunction="OE" pintype="input"/>
     </net>
-    <net code="56" name="VIN">
+    <net code="62" name="Net-(U15-Pad4)">
+      <node ref="U15" pin="4" pintype="output"/>
+      <node ref="U7" pin="1" pintype="input"/>
+    </net>
+    <net code="63" name="Net-(U16-Pad4)">
+      <node ref="U16" pin="4" pintype="output"/>
+      <node ref="U8" pin="1" pintype="input"/>
+    </net>
+    <net code="64" name="Net-(U17-Pad4)">
+      <node ref="U17" pin="4" pintype="output"/>
+      <node ref="U9" pin="1" pintype="input"/>
+    </net>
+    <net code="65" name="VIN">
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="EN" pintype="input"/>
       <node ref="U1" pin="3" pinfunction="IN" pintype="power_in"/>
       <node ref="UNO_SHIELD1" pin="8" pinfunction="VIN" pintype="power_in"/>
     </net>
-    <net code="57" name="unconnected-(JUSB1-ID-Pad4)">
+    <net code="66" name="unconnected-(JUSB1-ID-Pad4)">
       <node ref="JUSB1" pin="4" pinfunction="ID" pintype="passive"/>
     </net>
-    <net code="58" name="unconnected-(JUSB1-VBUS-Pad1)">
-      <node ref="JUSB1" pin="1" pinfunction="VBUS" pintype="power_out"/>
-    </net>
-    <net code="59" name="unconnected-(U2-NC-Pad2)">
+    <net code="67" name="unconnected-(U2-NC-Pad2)">
       <node ref="U2" pin="2" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="60" name="unconnected-(U3-NC-Pad2)">
+    <net code="68" name="unconnected-(U3-NC-Pad2)">
       <node ref="U3" pin="2" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="61" name="unconnected-(U10-GPIO16{slash}U0CTS{slash}ADC2_CH5{slash}XTAL_32K_N-Pad9)">
+    <net code="69" name="unconnected-(U10-GPIO16{slash}U0CTS{slash}ADC2_CH5{slash}XTAL_32K_N-Pad9)">
       <node ref="U10" pin="9" pinfunction="GPIO16/U0CTS/ADC2_CH5/XTAL_32K_N" pintype="bidirectional"/>
     </net>
-    <net code="62" name="unconnected-(U10-GPIO45-Pad26)">
+    <net code="70" name="unconnected-(U10-GPIO45-Pad26)">
       <node ref="U10" pin="26" pinfunction="GPIO45" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="63" name="unconnected-(U10-GPIO46-Pad16)">
+    <net code="71" name="unconnected-(U10-GPIO46-Pad16)">
       <node ref="U10" pin="16" pinfunction="GPIO46" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="64" name="unconnected-(U10-MTCK{slash}GPIO39{slash}CLK_OUT3{slash}SUBSPICS1-Pad32)">
-      <node ref="U10" pin="32" pinfunction="MTCK/GPIO39/CLK_OUT3/SUBSPICS1" pintype="bidirectional"/>
-    </net>
-    <net code="65" name="unconnected-(U10-MTDI{slash}GPIO41{slash}CLK_OUT1-Pad34)">
-      <node ref="U10" pin="34" pinfunction="MTDI/GPIO41/CLK_OUT1" pintype="bidirectional"/>
-    </net>
-    <net code="66" name="unconnected-(U10-MTDO{slash}GPIO40{slash}CLK_OUT2-Pad33)">
-      <node ref="U10" pin="33" pinfunction="MTDO/GPIO40/CLK_OUT2" pintype="bidirectional"/>
-    </net>
-    <net code="67" name="unconnected-(U10-MTMS{slash}GPIO42-Pad35)">
-      <node ref="U10" pin="35" pinfunction="MTMS/GPIO42" pintype="bidirectional"/>
-    </net>
-    <net code="68" name="unconnected-(U10-SPIDQS{slash}GPIO37{slash}FSPIQ{slash}SUBSPIQ-Pad30)">
+    <net code="72" name="unconnected-(U10-SPIDQS{slash}GPIO37{slash}FSPIQ{slash}SUBSPIQ-Pad30)">
       <node ref="U10" pin="30" pinfunction="SPIDQS/GPIO37/FSPIQ/SUBSPIQ" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="69" name="unconnected-(U10-SPIIO6{slash}GPIO35{slash}FSPID{slash}SUBSPID-Pad28)">
+    <net code="73" name="unconnected-(U10-SPIIO6{slash}GPIO35{slash}FSPID{slash}SUBSPID-Pad28)">
       <node ref="U10" pin="28" pinfunction="SPIIO6/GPIO35/FSPID/SUBSPID" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="70" name="unconnected-(U10-SPIIO7{slash}GPIO36{slash}FSPICLK{slash}SUBSPICLK-Pad29)">
+    <net code="74" name="unconnected-(U10-SPIIO7{slash}GPIO36{slash}FSPICLK{slash}SUBSPICLK-Pad29)">
       <node ref="U10" pin="29" pinfunction="SPIIO7/GPIO36/FSPICLK/SUBSPICLK" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="71" name="unconnected-(UNO_SHIELD1-NC-Pad1)">
+    <net code="75" name="unconnected-(UNO_SHIELD1-NC-Pad1)">
       <node ref="UNO_SHIELD1" pin="1" pinfunction="NC" pintype="no_connect"/>
     </net>
   </nets>
