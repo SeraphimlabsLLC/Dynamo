@@ -2,10 +2,21 @@
   #include "ESP32_timer.h"
 #endif
 
+//Clock constants for clock_set() and clock_get(). 
+#define US_PER_DAY 86400000000
+#define US_PER_HOUR 3600000000
+#define US_PER_MINUTE 60000000
+#define US_PER_SECOND 1000000
+
 volatile uint64_t time_us = 0; 
 uint64_t last_time_us = 0;
 uint64_t meas_start_time= 0;
 uint64_t meas_cumu_time = 0;
+
+uint64_t esp_us(){ //Equivalent to micros(); 
+  time_us = micros(); //esp_timer_get_time();
+  return time_us;
+}
 
 void Heartbeat(uint64_t seconds){
   time_us = TIME_US;
@@ -41,44 +52,51 @@ void Fastclock_setup(bool enabled){ //Initialize fastclock from outside class
 }
 
 void Fastclock_class::clock_init() { //Call clock_set with the values from the config file
-  clock_set(FCLK_RATE, FCLK_SECONDS, FCLK_MINUTES, FCLK_HOURS, FCLK_DAYS);
+  clock_set(FCLK_RATE, FCLK_DAYS, FCLK_HOURS, FCLK_MINUTES, FCLK_SECONDS, 0);
   clock_get();
   active = true;
   return; 
 }
 
-void Fastclock_class::clock_set(uint8_t s_rate, uint8_t s_seconds, uint8_t s_minutes, uint8_t s_hours, uint8_t s_days) {
+void Fastclock_class::clock_set(uint8_t s_rate, uint8_t s_days, uint8_t s_hours, uint8_t s_minutes, uint8_t s_seconds, uint32_t s_uS_remain) {
 
   set_rate = s_rate;
-  set_seconds = s_seconds;
-  set_minutes = s_minutes; 
-  set_hours = s_hours; 
-  set_days = s_days;
+  set_us = (s_days * US_PER_DAY) + (s_hours * US_PER_HOUR) + (s_minutes * US_PER_MINUTE) + (s_seconds * US_PER_SECOND) + s_uS_remain;
   set_at_us = TIME_US; //Time last set at
   active = true; 
+  Serial.printf("Fastclock: Clock set to day %u, %u:%u:%u, rate %ux\n", s_days, s_hours, s_minutes, s_seconds, set_rate);
   return;
 }
 
 void Fastclock_class::clock_get() {
-   uint64_t time_delta;
+   uint64_t time_delta = 0;
   if (active != true) {
     clock_init(); //Initialize if not yet set. 
   }
+  #if FCLK_ENABLE == true //Fastclock only ticks when enabled in config. If not, it will load config values and not change unless intentionally set. 
   time_us = TIME_US;
-  time_delta = (time_us - set_at_us) * set_rate; //Fastclock time passed since last set
-  days = set_days + (time_delta / 86400000000); //uS per day
+  time_delta = (time_us - set_at_us) * set_rate + set_us; //(Time passed) * set_rate + set_us
+  #endif 
   
-  hours = set_hours + (time_delta / 3600000000); //uS per hour
-  hours = hours - (days * 24); 
+  days = time_delta / US_PER_DAY; //time_delta / uS per day
+  time_delta = time_delta - ( uint64_t(days) * US_PER_DAY); //Subtract days from time_delta
   
-  minutes = set_minutes + (time_delta / 60000000); //uS per minute
-  minutes = minutes - (hours * 60); 
+  hours = time_delta / US_PER_HOUR; //time_delta / uS per hour
+  time_delta = time_delta - ( uint64_t(hours) * US_PER_HOUR); //Subtract hours from time_delta
   
-  seconds = set_seconds + (time_delta / 1000000); //uS per second
-  seconds = seconds - (minutes * 60);  
-
-  Serial.printf("Fastclock: day %u, %u:%u:%u \n", days, hours, minutes, seconds);
-  
+  minutes = time_delta / US_PER_MINUTE; //time_delta / uS per minute
+  time_delta = time_delta - ( uint64_t(minutes) * US_PER_MINUTE); //Subtract minutes from time_delta 
+  minutes_rem_uS = time_delta; 
+   
+  seconds = time_delta / US_PER_SECOND; //uS per second
+  time_delta = time_delta - ( uint64_t(seconds) * US_PER_SECOND); //Subtract seconds from time_delta
+  //Serial.printf("Fastclock clock_get: day %u, %u:%u:%u \n", days, hours, minutes, seconds);
   return;
 }
 #endif
+
+void IRAM_ATTR ESP_pwmcap_isr(){ //ISR Handler for the timer
+  
+
+  return;
+}

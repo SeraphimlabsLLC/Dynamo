@@ -24,8 +24,6 @@ class ESP_Uart {
   char* rx_read_data; //Pointer to the data just read
   uint16_t rx_read_len; //Size of rx_read_data
   uint8_t rx_read_processed; //read status, 0 when new, 255 when fully processed.
-  char* tx_write_data; //Pointer for data to be written
-  uint16_t tx_write_len; //Size of tx_write_data
   uint8_t tx_write_processed; //write status, 0 when new, 255 when fully processed.
   volatile bool tx_done; //Set to false when putting data in the tx fifo, ISR will set to true again when done. 
 
@@ -38,6 +36,7 @@ class ESP_Uart {
   void uart_rx_flush(); //Erase the RX buffer contents
   void rx_flush(); //Reset the rx buffer
   void tx_flush(); //Reset the tx buffer
+  //void set_rx_thresh(uint8_t limit); //Maximum 96 bytes
 
   private: 
   gpio_num_t tx_pin;

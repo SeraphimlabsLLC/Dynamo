@@ -33,16 +33,6 @@ void ESP_Uart::uart_init(uint8_t uartnum, uint8_t txpin, uint8_t rxpin, uint32_t
   rx_read_data = new char[rx_buff]; //Define rx_read_data as char[rx_buff]
   //Serial.printf("Uart %u rx_read_data %u \n", uart_num, rx_read_data);
 
-  //Configure TX buffer
-  if (tx_buff < 4) { 
-    tx_buff = 4;
-  }
-  if (tx_write_data) {
-    delete tx_write_data; //Delete any existing write buffer
-  }
-  tx_write_data = new char[tx_buff]; //Define tx_write_data as char[tx_buff]
-  //Serial.printf("Uart %u tx_write_data %u \n", uart_num, tx_write_data);
-  
   if (uart_num == 0) { //Use Arduino serial library for now. This will eventually need to be replaced. 
     Serial.begin (baudrate);
     Serial.printf(BOARD_ID);
@@ -57,11 +47,17 @@ void ESP_Uart::uart_init(uint8_t uartnum, uint8_t txpin, uint8_t rxpin, uint32_t
       //.rx_flow_ctrl_thresh = 122, //not used with flowctrl_disable
       //.source_clk = UART_SCLK_DEFAULT,  
     };
-    ESP_ERROR_CHECK(uart_driver_install(uart_port_t(uartnum), tx_buff, rx_buff, 0, NULL, 0));
+    txbuff = 256; 
+    rxbuff = 256; 
+    Serial.printf("Configuring uart %u to baud %u with txbuff %u rxbuff %u \n", uartnum, baudrate, txbuff, rxbuff); 
+    ESP_ERROR_CHECK(uart_driver_install(uart_port_t(uartnum), txbuff, rxbuff, 0, NULL, 0));
     ESP_ERROR_CHECK(uart_param_config(uart_port_t(uartnum), &uart_config));
     ESP_ERROR_CHECK(uart_set_pin(uart_port_t(uartnum), tx_pin, rx_pin, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
     ESP_ERROR_CHECK(uart_flush(uart_port_t(uartnum)));
-    //ESP_ERROR_CHECK(uart_set_tx_empty_threshold(0)) //Enables interrupt on TX empty. Can use this to turn on gpio=1
+    //REG_SET_FIELD(UART_CONF1_REG, UART_RXFIFO_FULL_THRHD, 1); //Change RX threshold to return single bytes. 
+
+
+   
   }
 return;
 }
@@ -125,6 +121,7 @@ uint16_t ESP_Uart::uart_read(uint8_t readlen) {//read the specified number of by
       rx_read_processed = 0; //This is new data to process.
       uint8_t i = 0; 
     }
+    rx_read_len = readlen; 
     return readlen;
   } else {
     //Read using ESP Uart library
@@ -136,6 +133,7 @@ uint16_t ESP_Uart::uart_read(uint8_t readlen) {//read the specified number of by
     Serial.printf("Read only %d bytes when told to read %d bytes \n", rx_read_len, readlen);
   }
   rx_read_processed = 0; //This is new data to process.
+  rx_read_len = readlen; 
   return readlen;
 }
 
@@ -156,8 +154,5 @@ void ESP_Uart::rx_flush(){ //Reset the rx buffer to 0
 }
 
 void ESP_Uart::tx_flush() { //Reset the tx buffer
-  delete tx_write_data; //delete the previous result so we can define it again at a new length
-  tx_write_len = 1;
-  tx_write_data = new char[tx_buff]; 
   return;
 }

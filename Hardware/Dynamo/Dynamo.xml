@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>S:\Projects\Dynamo\Hardware\Dynamo\Dynamo.kicad_sch</source>
-    <date>12/30/2023 8:16:00 PM</date>
+    <date>1/10/2024 1:38:09 AM</date>
     <tool>Eeschema 7.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Dynamo - DCC 4 channel booster</title>
         <company>SeraphimLabs LLC</company>
         <rev>0.4</rev>
-        <date/>
+        <date>2023-12-30</date>
         <source>Dynamo.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -589,17 +589,17 @@
       <tstamps>f15afaac-27db-473c-b5a6-9a3e220dd2b9</tstamps>
     </comp>
     <comp ref="Railsync1">
-      <value>WR-TBL 2P</value>
-      <footprint>Terminal_Wuerth_new:WR-TBL 2P</footprint>
+      <value>2P 3.5mm</value>
+      <footprint>Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.5_1x02_P3.50mm_Horizontal</footprint>
       <fields>
-        <field name="JLCPCB Part #">C5140626</field>
-        <field name="MFG">Wuerth</field>
-        <field name="PN">691322310002 </field>
+        <field name="JLCPCB Part #">C880572</field>
+        <field name="MFG">CUI Inc</field>
+        <field name="PN">TBP03R1-350-02GR </field>
       </fields>
       <libsource lib="Motor Shield Adapter-rescue" part="Conn_01x02_Female-Connector" description=""/>
-      <property name="MFG" value="Wuerth"/>
-      <property name="PN" value="691322310002 "/>
-      <property name="JLCPCB Part #" value="C5140626"/>
+      <property name="MFG" value="CUI Inc"/>
+      <property name="PN" value="TBP03R1-350-02GR "/>
+      <property name="JLCPCB Part #" value="C880572"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
