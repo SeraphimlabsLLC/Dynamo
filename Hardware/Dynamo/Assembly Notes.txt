@@ -1,12 +1,19 @@
-Fix Railsync input holes/pads to be larger so the socket installs correctly.
-Replace side-actuated boot/reset, they do not work at all. I think solder heat is melting the internals.
+Railsync socket replaced wth a 5mm pin spacing to match DCC-EX.
+Side-actuated boot/reset do not work well. Prefer USB programming,
+but they can work with a scrap of plastic as a contact surface to actuate them. 
+
 Consider heartbeat LED on a spare GPIO to slow flash when the device is operating correctly.
 
-Add status LED to MASTER_EN to show when railsync input is valid. Also status LEDs on the output enables for good measure.
+Consider status LED to MASTER_EN to show when railsync input is valid. Also status LEDs on the output enables for good measure.
 
-Add gating to allow USB power input. An ideal diode will be needed between vin and the buck regulator so it can't backfeed.
+All 4 outputs must be in the same mode DC or DCC. Cannot have some DCC while others in DC, DIR + OVERRIDE won't allow it.
+There are additional GPIOs left, it may be possible to add a gate that blocks the incoming DCC signal on tracks in DC mode.
+--Fixed in rev 0.4, additional gates added for per channel dir override.
 
-All 4 outputs must be in the same mode DC or DCC. Cannot have some DCC while others in DC, DIR + OVERRIDE won't allow it. 
-There are additional GPIOs left, it may be possible to add a gate that blocks the incoming DCC signal on tracks in DC mode. 
+--Fixed in rev 0.6:
+Changed 5v regulator to use MLCC instead of Electrolytic for less noise. 
+Added footprint for CB1 on the 3.3v just in case. Leave empty unless there is a stability problem. 
+Added TVS diode to protect against overvoltage damage. Rated working up to 18v, will conduct around 20v. 
+Would like to go higher, but a 24v nominal TVS might not clamp enough to stay under the 35v regulator max.
 
 

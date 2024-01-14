@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.3,
-          "height": 0.9,
-          "width": 0.9
+          "drill": 0.0,
+          "height": 2.7,
+          "width": 1.15
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.508
+          "min_clearance": 0.39999999999999997
         }
       },
       "diff_pair_dimensions": [
@@ -62,8 +62,8 @@
         "silk_edge_clearance|121650000|70160000|73f9adaf-6862-427b-bcb2-6189e8105103|0dcaa817-860c-416e-9273-93f529731773",
         "silk_edge_clearance|121650000|90230000|73f9adaf-6862-427b-bcb2-6189e8105103|e21ae0b6-4658-410e-a7c8-a5e42ee54818",
         "silk_edge_clearance|121650000|99370000|73f9adaf-6862-427b-bcb2-6189e8105103|74b5d968-5d80-4329-b990-7d56df24d9b3",
-        "silk_edge_clearance|190800000|73350000|c5f2ec41-efd6-4217-ac8e-06e98a3d9622|fb1f6e00-51ba-4c34-99f6-391a59fdfaa4",
-        "silk_edge_clearance|190800000|91350000|c5f2ec41-efd6-4217-ac8e-06e98a3d9622|d4f48ad5-d180-437d-9157-0150b076a05b"
+        "silk_edge_clearance|190800000|73350000|c5f2ec41-efd6-4217-ac8e-06e98a3d9622|042edb98-44d4-40ac-87ca-775aa0f1c73c",
+        "silk_edge_clearance|190800000|91350000|c5f2ec41-efd6-4217-ac8e-06e98a3d9622|7f89a0c8-9e50-4f3e-89f3-a5a43b97cc2b"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -185,7 +185,7 @@
         0.0,
         0.25,
         0.6,
-        1.2
+        1.0
       ],
       "via_dimensions": [
         {

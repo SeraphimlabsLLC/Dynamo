@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>S:\Projects\Dynamo\Hardware\Dynamo\Dynamo.kicad_sch</source>
-    <date>1/10/2024 1:38:09 AM</date>
+    <date>1/14/2024 1:20:27 AM</date>
     <tool>Eeschema 7.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -64,19 +64,21 @@
       <tstamps>00000000-0000-0000-0000-000064c1d171</tstamps>
     </comp>
     <comp ref="C2">
-      <value>22uF</value>
-      <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
       <fields>
-        <field name="JLCPCB Part #">C2164091</field>
-        <field name="MFG">Wurth Electronik</field>
-        <field name="PN">865080542006</field>
+        <field name="JLCPCB Part #">C2175202</field>
+        <field name="MFG">Murata</field>
+        <field name="PN">GRT31CR6YA106ME01L</field>
       </fields>
-      <libsource lib="Motor Shield Adapter-rescue" part="CP1_Small-Device" description=""/>
-      <property name="MFG" value="Wurth Electronik"/>
-      <property name="PN" value="865080542006"/>
-      <property name="JLCPCB Part #" value="C2164091"/>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="MFG" value="Murata"/>
+      <property name="PN" value="GRT31CR6YA106ME01L"/>
+      <property name="JLCPCB Part #" value="C2175202"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>5eaefaaa-2887-4634-bd55-fd611b82386d</tstamps>
     </comp>
@@ -100,19 +102,21 @@
       <tstamps>8b185a4d-14e3-43ae-8f6c-071cd062aa9e</tstamps>
     </comp>
     <comp ref="C4">
-      <value>22uF</value>
-      <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
       <fields>
-        <field name="JLCPCB Part #">C2164091</field>
-        <field name="MFG">Wurth Electronik</field>
-        <field name="PN">865080542006</field>
+        <field name="JLCPCB Part #">C2175202</field>
+        <field name="MFG">Murata</field>
+        <field name="PN">GRT31CR6YA106ME01L</field>
       </fields>
-      <libsource lib="Motor Shield Adapter-rescue" part="CP1_Small-Device" description=""/>
-      <property name="MFG" value="Wurth Electronik"/>
-      <property name="PN" value="865080542006"/>
-      <property name="JLCPCB Part #" value="C2164091"/>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="MFG" value="Murata"/>
+      <property name="PN" value="GRT31CR6YA106ME01L"/>
+      <property name="JLCPCB Part #" value="C2175202"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>9e5a5b09-f37d-4cf8-996d-51e01658671b</tstamps>
     </comp>
@@ -134,21 +138,21 @@
       <tstamps>2dd82870-1d1c-4901-bdb8-8f2d81bedad9</tstamps>
     </comp>
     <comp ref="C6">
-      <value>22uF</value>
-      <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
       <fields>
-        <field name="JLCPCB Part #">C2164091</field>
-        <field name="MFG">Wurth Electronik</field>
-        <field name="PN">865080542006</field>
+        <field name="JLCPCB Part #">C2175202</field>
+        <field name="MFG">Murata</field>
+        <field name="PN">GRT31CR6YA106ME01L</field>
       </fields>
-      <libsource lib="Device" part="C_Polarized_Small_US" description="Polarized capacitor, small US symbol"/>
-      <property name="MFG" value="Wurth Electronik"/>
-      <property name="PN" value="865080542006"/>
-      <property name="JLCPCB Part #" value="C2164091"/>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="MFG" value="Murata"/>
+      <property name="PN" value="GRT31CR6YA106ME01L"/>
+      <property name="JLCPCB Part #" value="C2175202"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
-      <property name="ki_description" value="Polarized capacitor, small US symbol"/>
-      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>2a8cb3af-6924-4e6c-918d-473c2f7fad95</tstamps>
     </comp>
@@ -362,6 +366,26 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>61d69b4d-ed33-411f-8a23-3fbb06bb5319</tstamps>
     </comp>
+    <comp ref="D7">
+      <value>SMAJ18CA</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <datasheet>https://www.littelfuse.com/media?resourcetype=datasheets&amp;itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&amp;filename=smaj-datasheet</datasheet>
+      <fields>
+        <field name="JLCPCB Part #">C523217</field>
+        <field name="MFG">YAEGO</field>
+        <field name="PN">SMAJ18CA-AT/TR13</field>
+      </fields>
+      <libsource lib="Diode" part="SMAJ18CA" description="400W bidirectional Transient Voltage Suppressor, 18.0Vr, SMA(DO-214AC)"/>
+      <property name="JLCPCB Part #" value="C523217"/>
+      <property name="MFG" value="YAEGO"/>
+      <property name="PN" value="SMAJ18CA-AT/TR13"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Dynamo.kicad_sch"/>
+      <property name="ki_description" value="400W bidirectional Transient Voltage Suppressor, 18.0Vr, SMA(DO-214AC)"/>
+      <property name="ki_keywords" value="bidirectional diode TVS voltage suppressor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>13e52090-8aec-4079-bb0a-b4416694c256</tstamps>
+    </comp>
     <comp ref="JUSB1">
       <value>USB_B_Micro</value>
       <footprint>Connector_USB:USB_Micro-B_Molex-105017-0001</footprint>
@@ -386,13 +410,14 @@
       <footprint>Inductor_SMD_Wurth:L_Wurth_WE-LQSH-4020</footprint>
       <datasheet>https://www.mouser.com/datasheet/2/281/JELF243A-0147-1699525.pdf</datasheet>
       <fields>
+        <field name="JLCPCB Part #">C2045329</field>
         <field name="MFG">Wuerth Electronik</field>
         <field name="PN">74405042047</field>
       </fields>
       <libsource lib="Motor Shield Adapter-rescue" part="INDUCTOR-pspice" description=""/>
       <property name="MFG" value="Wuerth Electronik"/>
       <property name="PN" value="74405042047"/>
-      <property name="JLCPCB Part #" value=""/>
+      <property name="JLCPCB Part #" value="C2045329"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -836,11 +861,13 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
       <fields>
         <field name="JLCPCB Part #">C10096</field>
+        <field name="MFG">Texas Insturments</field>
         <field name="PN">SN74LVC1G32DBVR</field>
       </fields>
       <libsource lib="Loconet DCC Interface-rescue" part="74AHC1G32-74xGxx" description=""/>
       <property name="PN" value="SN74LVC1G32DBVR"/>
       <property name="JLCPCB Part #" value="C10096"/>
+      <property name="MFG" value="Texas Insturments"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -891,11 +918,13 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
       <fields>
         <field name="JLCPCB Part #">C10096</field>
+        <field name="MFG">Texas Insturments</field>
         <field name="PN">SN74LVC1G32DBVR</field>
       </fields>
       <libsource lib="Loconet DCC Interface-rescue" part="74AHC1G32-74xGxx" description=""/>
       <property name="PN" value="SN74LVC1G32DBVR"/>
       <property name="JLCPCB Part #" value="C10096"/>
+      <property name="MFG" value="Texas Insturments"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -906,11 +935,13 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
       <fields>
         <field name="JLCPCB Part #">C10096</field>
+        <field name="MFG">Texas Insturments</field>
         <field name="PN">SN74LVC1G32DBVR</field>
       </fields>
       <libsource lib="Loconet DCC Interface-rescue" part="74AHC1G32-74xGxx" description=""/>
       <property name="PN" value="SN74LVC1G32DBVR"/>
       <property name="JLCPCB Part #" value="C10096"/>
+      <property name="MFG" value="Texas Insturments"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -921,11 +952,13 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
       <fields>
         <field name="JLCPCB Part #">C10096</field>
+        <field name="MFG">Texas Insturments</field>
         <field name="PN">SN74LVC1G32DBVR</field>
       </fields>
       <libsource lib="Loconet DCC Interface-rescue" part="74AHC1G32-74xGxx" description=""/>
       <property name="PN" value="SN74LVC1G32DBVR"/>
       <property name="JLCPCB Part #" value="C10096"/>
+      <property name="MFG" value="Texas Insturments"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1025,22 +1058,6 @@
         <pin num="4" name="ID" type="passive"/>
         <pin num="5" name="GND" type="power_out"/>
         <pin num="6" name="Shield" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Device" part="C_Polarized_Small_US">
-      <description>Polarized capacitor, small US symbol</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>CP_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">C_Polarized_Small_US</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="C_Small">
@@ -1145,6 +1162,23 @@
       <pins>
         <pin num="1" name="" type="passive"/>
         <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="SMAJ18CA">
+      <description>400W bidirectional Transient Voltage Suppressor, 18.0Vr, SMA(DO-214AC)</description>
+      <docs>https://www.littelfuse.com/media?resourcetype=datasheets&amp;itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&amp;filename=smaj-datasheet</docs>
+      <footprints>
+        <fp>D*SMA*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SMAJ18CA</field>
+        <field name="Footprint">Diode_SMD:D_SMA</field>
+        <field name="Datasheet">https://www.littelfuse.com/media?resourcetype=datasheets&amp;itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&amp;filename=smaj-datasheet</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Espressif" part="ESP32-S3-WROOM-1">
@@ -1421,6 +1455,9 @@
     <library logical="Device">
       <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
     </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Diode.kicad_sym</uri>
+    </library>
     <library logical="Isolator">
       <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Isolator.kicad_sym</uri>
     </library>
@@ -1692,6 +1729,7 @@
       <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D7" pin="2" pinfunction="A2" pintype="passive"/>
       <node ref="JUSB1" pin="5" pinfunction="GND" pintype="power_out"/>
       <node ref="JUSB1" pin="6" pinfunction="Shield" pintype="passive"/>
       <node ref="R2" pin="1" pintype="passive"/>
@@ -1788,6 +1826,7 @@
     </net>
     <net code="65" name="VIN">
       <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="D7" pin="1" pinfunction="A1" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="EN" pintype="input"/>
       <node ref="U1" pin="3" pinfunction="IN" pintype="power_in"/>
       <node ref="UNO_SHIELD1" pin="8" pinfunction="VIN" pintype="power_in"/>
