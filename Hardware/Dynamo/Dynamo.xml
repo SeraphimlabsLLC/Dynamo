@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>S:\Projects\Dynamo\Hardware\Dynamo\Dynamo.kicad_sch</source>
-    <date>1/14/2024 1:20:27 AM</date>
+    <date>1/29/2024 7:50:20 PM</date>
     <tool>Eeschema 7.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Dynamo - DCC 4 channel booster</title>
         <company>SeraphimLabs LLC</company>
-        <rev>0.4</rev>
-        <date>2023-12-30</date>
+        <rev>0.6</rev>
+        <date>2024-01-14</date>
         <source>Dynamo.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -837,17 +837,17 @@
       <tstamps>d76244fc-c806-4035-baf9-6e63c62029fc</tstamps>
     </comp>
     <comp ref="U11">
-      <value>NCP1117-3.3_SOT223</value>
+      <value>TLV1117LV33DCYR </value>
       <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
-      <datasheet>http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF</datasheet>
+      <datasheet>https://www.ti.com/lit/gpn/tlv1117lv</datasheet>
       <fields>
         <field name="JLCPCB Part #">C91728</field>
-        <field name="MFG">ONSemi</field>
-        <field name="PN">NCP1117ST33T3G</field>
+        <field name="MFG">Texas Insturments</field>
+        <field name="PN">TLV1117LV33DCYR </field>
       </fields>
       <libsource lib="Regulator_Linear" part="NCP1117-3.3_SOT223" description="1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"/>
-      <property name="MFG" value="ONSemi"/>
-      <property name="PN" value="NCP1117ST33T3G"/>
+      <property name="MFG" value="Texas Insturments"/>
+      <property name="PN" value="TLV1117LV33DCYR "/>
       <property name="JLCPCB Part #" value="C91728"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
@@ -968,8 +968,14 @@
       <value>Arduino_UNO_R3</value>
       <footprint>Module:Arduino_UNO_R3_WithMountingHoles</footprint>
       <datasheet>https://www.arduino.cc/en/Main/arduinoBoardUno</datasheet>
+      <fields>
+        <field name="MFG">Arduino</field>
+        <field name="PN">85</field>
+      </fields>
       <libsource lib="MCU_Module" part="Arduino_UNO_R3" description="Arduino UNO Microcontroller Module, release 3"/>
       <property name="JLCPCB Part #" value=""/>
+      <property name="MFG" value="Arduino"/>
+      <property name="PN" value="85"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Dynamo.kicad_sch"/>
       <property name="ki_description" value="Arduino UNO Microcontroller Module, release 3"/>
